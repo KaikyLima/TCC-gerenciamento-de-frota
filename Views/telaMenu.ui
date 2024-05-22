@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>875</width>
+    <height>535</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Menu principal</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="fundo">
+    <property name="geometry">
+     <rect>
+      <x>-180</x>
+      <y>-40</y>
+      <width>1151</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Images/77.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="IconUsuario">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>10</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Images/adicionar-usuario (4).png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Menuzinho">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Images/cardapio.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="help">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>10</y>
+      <width>41</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Images/chamada-de-ajuda.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="iconData">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>10</y>
+      <width>31</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Images/calendario.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="dtAtual">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>20</y>
+      <width>110</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid white; 
+    background-color: transparent; 
+    border-radius: 5px;
+
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="botaoEntrarCadastroVeic">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>150</y>
+      <width>241</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Black</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 7px solid white; 
+    background-color:rgba(0, 0, 0, 0.6);; 
+    border-radius: 10px;
+
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>CADASTRAR VEÍCULO</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="botaoCtVinculo">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>150</y>
+      <width>241</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Black</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 7px solid white; 
+    background-color:rgba(0, 0, 0, 0.6);; 
+    border-radius: 10px;
+
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>VINCULAR MOTORISTA</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="botaoEngateDesengate">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>260</y>
+      <width>241</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Black</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 7px solid white; 
+    background-color:rgba(0, 0, 0, 0.6);; 
+    border-radius: 10px;
+
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>ENGATAR VEÍCULO</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="botaoCadastroForne">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>260</y>
+      <width>241</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Black</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 7px solid white; 
+    background-color:rgba(0, 0, 0, 0.6);; 
+    border-radius: 10px;
+
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>CADASTRAR FORNECEDOR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="botaoDespesa">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>150</y>
+      <width>241</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Black</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 7px solid white; 
+    background-color:rgba(0, 0, 0, 0.6);; 
+    border-radius: 10px;
+
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>LANÇAMENTO DESPESA</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="botaoConsultaVeic">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>370</y>
+      <width>241</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Black</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 7px solid white; 
+    background-color:rgba(0, 0, 0, 0.6);; 
+    border-radius: 10px;
+
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>CONSULTAR VEÍCULOS</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="botaoCadastroFunc">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>10</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Black</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+    background-color: transparent; 
+  </string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="botaoConsultaVinculos">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>260</y>
+      <width>241</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Black</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 7px solid white; 
+    background-color:rgba(0, 0, 0, 0.6);; 
+    border-radius: 10px;
+
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>CONSULTAR VÍNCULOS</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="botaoConsultaEngate">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>370</y>
+      <width>241</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Black</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 7px solid white; 
+    background-color:rgba(0, 0, 0, 0.6);; 
+    border-radius: 10px;
+
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>CONSULTAR ENGATES</string>
+    </property>
+   </widget>
+   <zorder>fundo</zorder>
+   <zorder>IconUsuario</zorder>
+   <zorder>Menuzinho</zorder>
+   <zorder>help</zorder>
+   <zorder>iconData</zorder>
+   <zorder>dtAtual</zorder>
+   <zorder>botaoEntrarCadastroVeic</zorder>
+   <zorder>botaoCtVinculo</zorder>
+   <zorder>botaoEngateDesengate</zorder>
+   <zorder>botaoCadastroForne</zorder>
+   <zorder>botaoDespesa</zorder>
+   <zorder>botaoConsultaVeic</zorder>
+   <zorder>botaoConsultaVinculos</zorder>
+   <zorder>botaoConsultaEngate</zorder>
+   <zorder>botaoCadastroFunc</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

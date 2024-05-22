@@ -1,0 +1,2409 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelRelationshipPerfOptions.true...ObjectModelRelationshipPerfOptions />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-style' value='as-synced' />
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource caption='C##CTFROTA' inline='true' name='federated.0bbfjq710c9ca318kvwas0edn5ks' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='DESKTOP-14HLTJ9' name='oracle.1v1shl413cm3qm0zzmxi310vey1v'>
+            <connection authentication='RDBMS' class='oracle' one-time-sql='' port='1521' schema='C##CTFROTA' server='DESKTOP-14HLTJ9' service='' sslmode='' username='system' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='CTENGATE' table='[C##CTFROTA].[CTENGATE]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='CTENGATE' table='[C##CTFROTA].[CTENGATE]' type='table' />
+          <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='VEICULO' table='[C##CTFROTA].[VEICULO]' type='table' />
+          <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='CTVINCULO' table='[C##CTFROTA].[CTVINCULO]' type='table' />
+          <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='MOTORISTA' table='[C##CTFROTA].[MOTORISTA]' type='table' />
+          <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='FUNCIONARIO' table='[C##CTFROTA].[FUNCIONARIO]' type='table' />
+          <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='PESSOA' table='[C##CTFROTA].[PESSOA]' type='table' />
+          <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='DESPESAS' table='[C##CTFROTA].[DESPESAS]' type='table' />
+          <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='FORNECEDOR' table='[C##CTFROTA].[FORNECEDOR]' type='table' />
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[CNPJ]' value='[FORNECEDOR].[CNPJ]' />
+          <map key='[COD (FORNECEDOR)]' value='[FORNECEDOR].[COD]' />
+          <map key='[COD]' value='[DESPESAS].[COD]' />
+          <map key='[DSFUNCAO]' value='[FUNCIONARIO].[DSFUNCAO]' />
+          <map key='[DSMODELO]' value='[VEICULO].[DSMODELO]' />
+          <map key='[DTADMISSAO]' value='[FUNCIONARIO].[DTADMISSAO]' />
+          <map key='[DTAQUISICAO]' value='[VEICULO].[DTAQUISICAO]' />
+          <map key='[DTDESENGATE]' value='[CTENGATE].[DTDESENGATE]' />
+          <map key='[DTDESVINCULO]' value='[CTVINCULO].[DTDESVINCULO]' />
+          <map key='[DTEMISSAO]' value='[DESPESAS].[DTEMISSAO]' />
+          <map key='[DTENGATE]' value='[CTENGATE].[DTENGATE]' />
+          <map key='[DTNASCIMENTO]' value='[PESSOA].[DTNASCIMENTO]' />
+          <map key='[DTVINCULO]' value='[CTVINCULO].[DTVINCULO]' />
+          <map key='[FORNECEDOR_COD]' value='[DESPESAS].[FORNECEDOR_COD]' />
+          <map key='[FUNCIONARIO_NRMATRICULA]' value='[MOTORISTA].[FUNCIONARIO_NRMATRICULA]' />
+          <map key='[ID (CTVINCULO)]' value='[CTVINCULO].[ID]' />
+          <map key='[IDMOTORISTA]' value='[MOTORISTA].[IDMOTORISTA]' />
+          <map key='[IDPESSOA]' value='[PESSOA].[IDPESSOA]' />
+          <map key='[IDVEICULO]' value='[VEICULO].[IDVEICULO]' />
+          <map key='[ID]' value='[CTENGATE].[ID]' />
+          <map key='[MOTORISTA_IDMOTORISTA]' value='[CTVINCULO].[MOTORISTA_IDMOTORISTA]' />
+          <map key='[NMFORNECEDOR]' value='[FORNECEDOR].[NMFORNECEDOR]' />
+          <map key='[NMFUNCIONARIO]' value='[FUNCIONARIO].[NMFUNCIONARIO]' />
+          <map key='[NMMOTORISTA]' value='[MOTORISTA].[NMMOTORISTA]' />
+          <map key='[NMPESSOA]' value='[PESSOA].[NMPESSOA]' />
+          <map key='[NRCHASSI]' value='[VEICULO].[NRCHASSI]' />
+          <map key='[NRCONJUNTO (VEICULO)]' value='[VEICULO].[NRCONJUNTO]' />
+          <map key='[NRCONJUNTO]' value='[CTENGATE].[NRCONJUNTO]' />
+          <map key='[NRCPF]' value='[PESSOA].[NRCPF]' />
+          <map key='[NRFROTA (VEICULO)]' value='[VEICULO].[NRFROTA]' />
+          <map key='[NRFROTA]' value='[CTENGATE].[NRFROTA]' />
+          <map key='[NRMATRICULA]' value='[FUNCIONARIO].[NRMATRICULA]' />
+          <map key='[NRNOTA]' value='[DESPESAS].[NRNOTA]' />
+          <map key='[NRPLACA]' value='[VEICULO].[NRPLACA]' />
+          <map key='[NRRENAVAM]' value='[VEICULO].[NRRENAVAM]' />
+          <map key='[OBSERVACAO]' value='[DESPESAS].[OBSERVACAO]' />
+          <map key='[PESSOA_IDPESSOA]' value='[FUNCIONARIO].[PESSOA_IDPESSOA]' />
+          <map key='[QTEIXO]' value='[VEICULO].[QTEIXO]' />
+          <map key='[TPGASTOS]' value='[DESPESAS].[TPGASTOS]' />
+          <map key='[TPSITUACAO (FUNCIONARIO)]' value='[FUNCIONARIO].[TPSITUACAO]' />
+          <map key='[TPTRACAO]' value='[VEICULO].[TPTRACAO]' />
+          <map key='[TPVEICULO]' value='[VEICULO].[TPVEICULO]' />
+          <map key='[VALOR]' value='[DESPESAS].[VALOR]' />
+          <map key='[VEICULO_IDVEICULO (CTVINCULO)]' value='[CTVINCULO].[VEICULO_IDVEICULO]' />
+          <map key='[VEICULO_IDVEICULO (DESPESAS)]' value='[DESPESAS].[VEICULO_IDVEICULO]' />
+          <map key='[VEICULO_IDVEICULO (VEICULO)]' value='[VEICULO].[VEICULO_IDVEICULO]' />
+          <map key='[VEICULO_IDVEICULO]' value='[CTENGATE].[VEICULO_IDVEICULO]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[CTENGATE]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DTENGATE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DTENGATE]</local-name>
+            <parent-name>[CTENGATE]</parent-name>
+            <remote-alias>DTENGATE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DTDESENGATE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DTDESENGATE]</local-name>
+            <parent-name>[CTENGATE]</parent-name>
+            <remote-alias>DTDESENGATE</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VEICULO_IDVEICULO</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[VEICULO_IDVEICULO]</local-name>
+            <parent-name>[CTENGATE]</parent-name>
+            <remote-alias>VEICULO_IDVEICULO</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NRFROTA</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[NRFROTA]</local-name>
+            <parent-name>[CTENGATE]</parent-name>
+            <remote-alias>NRFROTA</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NRCONJUNTO</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[NRCONJUNTO]</local-name>
+            <parent-name>[CTENGATE]</parent-name>
+            <remote-alias>NRCONJUNTO</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IDVEICULO</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[IDVEICULO]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>IDVEICULO</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NRPLACA</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NRPLACA]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>NRPLACA</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>7</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_AFC{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DSMODELO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DSMODELO]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>DSMODELO</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>100</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TPTRACAO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TPTRACAO]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>TPTRACAO</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>40</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NRRENAVAM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NRRENAVAM]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>NRRENAVAM</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>11</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_AFC{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DTAQUISICAO</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DTAQUISICAO]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>DTAQUISICAO</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NRFROTA</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[NRFROTA (VEICULO)]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>NRFROTA</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NRCONJUNTO</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[NRCONJUNTO (VEICULO)]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>NRCONJUNTO</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NRCHASSI</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NRCHASSI]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>NRCHASSI</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>17</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>QTEIXO</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[QTEIXO]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>QTEIXO</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VEICULO_IDVEICULO</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[VEICULO_IDVEICULO (VEICULO)]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>VEICULO_IDVEICULO</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TPVEICULO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TPVEICULO]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>TPVEICULO</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[ID (CTVINCULO)]</local-name>
+            <parent-name>[CTVINCULO]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DTVINCULO</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DTVINCULO]</local-name>
+            <parent-name>[CTVINCULO]</parent-name>
+            <remote-alias>DTVINCULO</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DTDESVINCULO</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DTDESVINCULO]</local-name>
+            <parent-name>[CTVINCULO]</parent-name>
+            <remote-alias>DTDESVINCULO</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MOTORISTA_IDMOTORISTA</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[MOTORISTA_IDMOTORISTA]</local-name>
+            <parent-name>[CTVINCULO]</parent-name>
+            <remote-alias>MOTORISTA_IDMOTORISTA</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VEICULO_IDVEICULO</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[VEICULO_IDVEICULO (CTVINCULO)]</local-name>
+            <parent-name>[CTVINCULO]</parent-name>
+            <remote-alias>VEICULO_IDVEICULO</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IDMOTORISTA</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[IDMOTORISTA]</local-name>
+            <parent-name>[MOTORISTA]</parent-name>
+            <remote-alias>IDMOTORISTA</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MOTORISTA (C##CTFROTA.MOTORISTA)_31CD5B1799D84DC8BBB9A4317AE6C8AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NMMOTORISTA</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NMMOTORISTA]</local-name>
+            <parent-name>[MOTORISTA]</parent-name>
+            <remote-alias>NMMOTORISTA</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>100</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MOTORISTA (C##CTFROTA.MOTORISTA)_31CD5B1799D84DC8BBB9A4317AE6C8AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FUNCIONARIO_NRMATRICULA</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[FUNCIONARIO_NRMATRICULA]</local-name>
+            <parent-name>[MOTORISTA]</parent-name>
+            <remote-alias>FUNCIONARIO_NRMATRICULA</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MOTORISTA (C##CTFROTA.MOTORISTA)_31CD5B1799D84DC8BBB9A4317AE6C8AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NRMATRICULA</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[NRMATRICULA]</local-name>
+            <parent-name>[FUNCIONARIO]</parent-name>
+            <remote-alias>NRMATRICULA</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FUNCIONARIO (C##CTFROTA.FUNCIONARIO)_DD3215FA57DA4E08984733A214E6D832]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NMFUNCIONARIO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NMFUNCIONARIO]</local-name>
+            <parent-name>[FUNCIONARIO]</parent-name>
+            <remote-alias>NMFUNCIONARIO</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>100</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FUNCIONARIO (C##CTFROTA.FUNCIONARIO)_DD3215FA57DA4E08984733A214E6D832]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DSFUNCAO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DSFUNCAO]</local-name>
+            <parent-name>[FUNCIONARIO]</parent-name>
+            <remote-alias>DSFUNCAO</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>100</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FUNCIONARIO (C##CTFROTA.FUNCIONARIO)_DD3215FA57DA4E08984733A214E6D832]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DTADMISSAO</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DTADMISSAO]</local-name>
+            <parent-name>[FUNCIONARIO]</parent-name>
+            <remote-alias>DTADMISSAO</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FUNCIONARIO (C##CTFROTA.FUNCIONARIO)_DD3215FA57DA4E08984733A214E6D832]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PESSOA_IDPESSOA</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[PESSOA_IDPESSOA]</local-name>
+            <parent-name>[FUNCIONARIO]</parent-name>
+            <remote-alias>PESSOA_IDPESSOA</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FUNCIONARIO (C##CTFROTA.FUNCIONARIO)_DD3215FA57DA4E08984733A214E6D832]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TPSITUACAO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TPSITUACAO (FUNCIONARIO)]</local-name>
+            <parent-name>[FUNCIONARIO]</parent-name>
+            <remote-alias>TPSITUACAO</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FUNCIONARIO (C##CTFROTA.FUNCIONARIO)_DD3215FA57DA4E08984733A214E6D832]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IDPESSOA</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[IDPESSOA]</local-name>
+            <parent-name>[PESSOA]</parent-name>
+            <remote-alias>IDPESSOA</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PESSOA (C##CTFROTA.PESSOA)_8A5323DFD5F24BE78029346F7C9BFC19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NMPESSOA</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NMPESSOA]</local-name>
+            <parent-name>[PESSOA]</parent-name>
+            <remote-alias>NMPESSOA</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>100</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PESSOA (C##CTFROTA.PESSOA)_8A5323DFD5F24BE78029346F7C9BFC19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NRCPF</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NRCPF]</local-name>
+            <parent-name>[PESSOA]</parent-name>
+            <remote-alias>NRCPF</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>11</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_AFC{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PESSOA (C##CTFROTA.PESSOA)_8A5323DFD5F24BE78029346F7C9BFC19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DTNASCIMENTO</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DTNASCIMENTO]</local-name>
+            <parent-name>[PESSOA]</parent-name>
+            <remote-alias>DTNASCIMENTO</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PESSOA (C##CTFROTA.PESSOA)_8A5323DFD5F24BE78029346F7C9BFC19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COD</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[COD]</local-name>
+            <parent-name>[DESPESAS]</parent-name>
+            <remote-alias>COD</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TPGASTOS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TPGASTOS]</local-name>
+            <parent-name>[DESPESAS]</parent-name>
+            <remote-alias>TPGASTOS</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>100</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DTEMISSAO</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DTEMISSAO]</local-name>
+            <parent-name>[DESPESAS]</parent-name>
+            <remote-alias>DTEMISSAO</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NRNOTA</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NRNOTA]</local-name>
+            <parent-name>[DESPESAS]</parent-name>
+            <remote-alias>NRNOTA</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>10</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_AFC{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VALOR</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[VALOR]</local-name>
+            <parent-name>[DESPESAS]</parent-name>
+            <remote-alias>VALOR</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OBSERVACAO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OBSERVACAO]</local-name>
+            <parent-name>[DESPESAS]</parent-name>
+            <remote-alias>OBSERVACAO</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>300</width>
+            <contains-null>true</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VEICULO_IDVEICULO</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[VEICULO_IDVEICULO (DESPESAS)]</local-name>
+            <parent-name>[DESPESAS]</parent-name>
+            <remote-alias>VEICULO_IDVEICULO</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FORNECEDOR_COD</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[FORNECEDOR_COD]</local-name>
+            <parent-name>[DESPESAS]</parent-name>
+            <remote-alias>FORNECEDOR_COD</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COD</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[COD (FORNECEDOR)]</local-name>
+            <parent-name>[FORNECEDOR]</parent-name>
+            <remote-alias>COD</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FORNECEDOR (C##CTFROTA.FORNECEDOR)_4A21E9D6CD29491997681C34C2EE7ED3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CNPJ</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CNPJ]</local-name>
+            <parent-name>[FORNECEDOR]</parent-name>
+            <remote-alias>CNPJ</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>14</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_AFC{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FORNECEDOR (C##CTFROTA.FORNECEDOR)_4A21E9D6CD29491997681C34C2EE7ED3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NMFORNECEDOR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NMFORNECEDOR]</local-name>
+            <parent-name>[FORNECEDOR]</parent-name>
+            <remote-alias>NMFORNECEDOR</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>200</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FORNECEDOR (C##CTFROTA.FORNECEDOR)_4A21E9D6CD29491997681C34C2EE7ED3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Cnpj' datatype='string' name='[CNPJ]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Cod (Fornecedor)' datatype='real' name='[COD (FORNECEDOR)]' role='dimension' type='quantitative' />
+      <column caption='Dsfuncao' datatype='string' name='[DSFUNCAO]' role='dimension' type='nominal' />
+      <column caption='Dsmodelo' datatype='string' name='[DSMODELO]' role='dimension' type='nominal' />
+      <column caption='Dtadmissao' datatype='datetime' name='[DTADMISSAO]' role='dimension' type='ordinal' />
+      <column caption='Dtaquisicao' datatype='datetime' name='[DTAQUISICAO]' role='dimension' type='ordinal' />
+      <column caption='Dtdesengate' datatype='datetime' name='[DTDESENGATE]' role='dimension' type='ordinal' />
+      <column caption='Dtdesvinculo' datatype='datetime' name='[DTDESVINCULO]' role='dimension' type='ordinal' />
+      <column caption='Dtemissao' datatype='datetime' name='[DTEMISSAO]' role='dimension' type='ordinal' />
+      <column caption='Dtengate' datatype='datetime' name='[DTENGATE]' role='dimension' type='ordinal' />
+      <column caption='Dtnascimento' datatype='datetime' name='[DTNASCIMENTO]' role='dimension' type='ordinal' />
+      <column caption='Dtvinculo' datatype='datetime' name='[DTVINCULO]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Fornecedor Cod' datatype='real' name='[FORNECEDOR_COD]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' caption='Funcionario Nrmatricula' datatype='real' name='[FUNCIONARIO_NRMATRICULA]' role='dimension' type='quantitative' />
+      <column caption='Id (Ctvinculo)' datatype='real' name='[ID (CTVINCULO)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Idmotorista' datatype='real' name='[IDMOTORISTA]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' caption='Idpessoa' datatype='real' name='[IDPESSOA]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' caption='Idveiculo' datatype='real' name='[IDVEICULO]' role='dimension' type='quantitative' />
+      <column datatype='real' name='[ID]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Motorista Idmotorista' datatype='real' name='[MOTORISTA_IDMOTORISTA]' role='dimension' type='quantitative' />
+      <column caption='Nmfornecedor' datatype='string' name='[NMFORNECEDOR]' role='dimension' type='nominal' />
+      <column caption='Nmfuncionario' datatype='string' name='[NMFUNCIONARIO]' role='dimension' type='nominal' />
+      <column caption='Nmmotorista' datatype='string' name='[NMMOTORISTA]' role='dimension' type='nominal' />
+      <column caption='Nmpessoa' datatype='string' name='[NMPESSOA]' role='dimension' type='nominal' />
+      <column caption='Nrchassi' datatype='string' name='[NRCHASSI]' role='dimension' type='nominal' />
+      <column caption='Nrconjunto (Veiculo)' datatype='real' name='[NRCONJUNTO (VEICULO)]' role='measure' type='quantitative' />
+      <column caption='Nrconjunto' datatype='real' name='[NRCONJUNTO]' role='measure' type='quantitative' />
+      <column caption='Nrcpf' datatype='string' name='[NRCPF]' role='dimension' type='nominal' />
+      <column caption='Nrfrota (Veiculo)' datatype='real' name='[NRFROTA (VEICULO)]' role='measure' type='quantitative' />
+      <column caption='Nrfrota' datatype='real' name='[NRFROTA]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Nrmatricula' datatype='real' name='[NRMATRICULA]' role='dimension' type='quantitative' />
+      <column caption='Nrnota' datatype='string' name='[NRNOTA]' role='dimension' type='nominal' />
+      <column caption='Nrplaca' datatype='string' name='[NRPLACA]' role='dimension' type='nominal' />
+      <column caption='Nrrenavam' datatype='string' name='[NRRENAVAM]' role='dimension' type='nominal' />
+      <column caption='Observacao' datatype='string' name='[OBSERVACAO]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Pessoa Idpessoa' datatype='real' name='[PESSOA_IDPESSOA]' role='dimension' type='quantitative' />
+      <column caption='Qteixo' datatype='real' name='[QTEIXO]' role='measure' type='quantitative' />
+      <column caption='Tpgastos' datatype='string' name='[TPGASTOS]' role='dimension' type='nominal' />
+      <column caption='Tptracao' datatype='string' name='[TPTRACAO]' role='dimension' type='nominal' />
+      <column caption='Tpveiculo' datatype='string' name='[TPVEICULO]' role='dimension' type='nominal' />
+      <column caption='Valor' datatype='real' name='[VALOR]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Veiculo Idveiculo (Ctvinculo)' datatype='real' name='[VEICULO_IDVEICULO (CTVINCULO)]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' caption='Veiculo Idveiculo (Despesas)' datatype='real' name='[VEICULO_IDVEICULO (DESPESAS)]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' caption='Veiculo Idveiculo (Veiculo)' datatype='real' name='[VEICULO_IDVEICULO (VEICULO)]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' caption='Veiculo Idveiculo' datatype='real' name='[VEICULO_IDVEICULO]' role='dimension' type='quantitative' />
+      <column aggregation='None' datatype='integer' name='[Valor (compartimento)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='3' formula='[VALOR]' peg='0' size='4193' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='CTENGATE' datatype='table' name='[__tableau_internal_object_id__].[CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='CTVINCULO' datatype='table' name='[__tableau_internal_object_id__].[CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='DESPESAS' datatype='table' name='[__tableau_internal_object_id__].[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='FORNECEDOR' datatype='table' name='[__tableau_internal_object_id__].[FORNECEDOR (C##CTFROTA.FORNECEDOR)_4A21E9D6CD29491997681C34C2EE7ED3]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='FUNCIONARIO' datatype='table' name='[__tableau_internal_object_id__].[FUNCIONARIO (C##CTFROTA.FUNCIONARIO)_DD3215FA57DA4E08984733A214E6D832]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='MOTORISTA' datatype='table' name='[__tableau_internal_object_id__].[MOTORISTA (C##CTFROTA.MOTORISTA)_31CD5B1799D84DC8BBB9A4317AE6C8AE]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='PESSOA' datatype='table' name='[__tableau_internal_object_id__].[PESSOA (C##CTFROTA.PESSOA)_8A5323DFD5F24BE78029346F7C9BFC19]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='VEICULO' datatype='table' name='[__tableau_internal_object_id__].[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]' role='measure' type='quantitative' />
+      <column-instance column='[DSMODELO]' derivation='None' name='[none:DSMODELO:nk]' pivot='key' type='nominal' />
+      <column-instance column='[TPGASTOS]' derivation='None' name='[none:TPGASTOS:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:DSMODELO:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Actros&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;FH500&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;FH 500&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Volvo FH 400&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;New Item&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Volvo FH 500&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;FH 400&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Mercedes-Benz Actros&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ACTROS&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;R-Series&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:TPGASTOS:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Abastecimento&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Seguro&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Multa&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Manutenção Preventiva&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Documentação veicular&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Manutenção Corretiva&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brasil&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='CTENGATE' id='CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02'>
+            <properties context=''>
+              <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='CTENGATE' table='[C##CTFROTA].[CTENGATE]' type='table' />
+            </properties>
+          </object>
+          <object caption='CTVINCULO' id='CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369'>
+            <properties context=''>
+              <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='CTVINCULO' table='[C##CTFROTA].[CTVINCULO]' type='table' />
+            </properties>
+          </object>
+          <object caption='DESPESAS' id='DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20'>
+            <properties context=''>
+              <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='DESPESAS' table='[C##CTFROTA].[DESPESAS]' type='table' />
+            </properties>
+          </object>
+          <object caption='FORNECEDOR' id='FORNECEDOR (C##CTFROTA.FORNECEDOR)_4A21E9D6CD29491997681C34C2EE7ED3'>
+            <properties context=''>
+              <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='FORNECEDOR' table='[C##CTFROTA].[FORNECEDOR]' type='table' />
+            </properties>
+          </object>
+          <object caption='FUNCIONARIO' id='FUNCIONARIO (C##CTFROTA.FUNCIONARIO)_DD3215FA57DA4E08984733A214E6D832'>
+            <properties context=''>
+              <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='FUNCIONARIO' table='[C##CTFROTA].[FUNCIONARIO]' type='table' />
+            </properties>
+          </object>
+          <object caption='MOTORISTA' id='MOTORISTA (C##CTFROTA.MOTORISTA)_31CD5B1799D84DC8BBB9A4317AE6C8AE'>
+            <properties context=''>
+              <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='MOTORISTA' table='[C##CTFROTA].[MOTORISTA]' type='table' />
+            </properties>
+          </object>
+          <object caption='PESSOA' id='PESSOA (C##CTFROTA.PESSOA)_8A5323DFD5F24BE78029346F7C9BFC19'>
+            <properties context=''>
+              <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='PESSOA' table='[C##CTFROTA].[PESSOA]' type='table' />
+            </properties>
+          </object>
+          <object caption='VEICULO' id='VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD'>
+            <properties context=''>
+              <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='VEICULO' table='[C##CTFROTA].[VEICULO]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[VEICULO_IDVEICULO (VEICULO)]' />
+              <expression op='[VEICULO_IDVEICULO (CTVINCULO)]' />
+            </expression>
+            <first-end-point object-id='VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD' />
+            <second-end-point object-id='CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[VEICULO_IDVEICULO (VEICULO)]' />
+              <expression op='[VEICULO_IDVEICULO (DESPESAS)]' />
+            </expression>
+            <first-end-point object-id='VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD' />
+            <second-end-point object-id='DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[COD]' />
+              <expression op='[COD (FORNECEDOR)]' />
+            </expression>
+            <first-end-point object-id='DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='FORNECEDOR (C##CTFROTA.FORNECEDOR)_4A21E9D6CD29491997681C34C2EE7ED3' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[FUNCIONARIO_NRMATRICULA]' />
+              <expression op='[NRMATRICULA]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-guaranteed-value='true' guaranteed-value='true' object-id='MOTORISTA (C##CTFROTA.MOTORISTA)_31CD5B1799D84DC8BBB9A4317AE6C8AE' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='FUNCIONARIO (C##CTFROTA.FUNCIONARIO)_DD3215FA57DA4E08984733A214E6D832' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[MOTORISTA_IDMOTORISTA]' />
+              <expression op='[IDMOTORISTA]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-guaranteed-value='true' guaranteed-value='true' object-id='CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='MOTORISTA (C##CTFROTA.MOTORISTA)_31CD5B1799D84DC8BBB9A4317AE6C8AE' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[PESSOA_IDPESSOA]' />
+              <expression op='[IDPESSOA]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-guaranteed-value='true' guaranteed-value='true' object-id='FUNCIONARIO (C##CTFROTA.FUNCIONARIO)_DD3215FA57DA4E08984733A214E6D832' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='PESSOA (C##CTFROTA.PESSOA)_8A5323DFD5F24BE78029346F7C9BFC19' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[VEICULO_IDVEICULO]' />
+              <expression op='[IDVEICULO]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-guaranteed-value='true' guaranteed-value='true' object-id='CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD' unique-key='true' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Planilha 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='C##CTFROTA' name='federated.0bbfjq710c9ca318kvwas0edn5ks' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bbfjq710c9ca318kvwas0edn5ks'>
+            <_.fcp.ObjectModelTableType.false...column caption='CTENGATE' datatype='integer' name='[__tableau_internal_object_id__].[CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02]' role='measure' type='quantitative' />
+            <column caption='Dsmodelo' datatype='string' name='[DSMODELO]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='CTENGATE' datatype='table' name='[__tableau_internal_object_id__].[CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DSMODELO]' derivation='None' name='[none:DSMODELO:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:DSMODELO:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:DSMODELO:nk]' />
+              <groupfilter function='member' level='[none:DSMODELO:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:DSMODELO:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02:qk]' scope='cols' value='Quantidade de engates' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:DSMODELO:nk]</rows>
+        <cols>[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02:qk]</cols>
+      </table>
+      <simple-id uuid='{59DAF62A-76AF-4DBE-87BA-C705113D4F27}' />
+    </worksheet>
+    <worksheet name='Planilha 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Gastos&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='C##CTFROTA' name='federated.0bbfjq710c9ca318kvwas0edn5ks' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bbfjq710c9ca318kvwas0edn5ks'>
+            <column caption='Tpgastos' datatype='string' name='[TPGASTOS]' role='dimension' type='nominal' />
+            <column caption='Valor' datatype='real' name='[VALOR]' role='measure' type='quantitative' />
+            <column-instance column='[TPGASTOS]' derivation='None' name='[none:TPGASTOS:nk]' pivot='key' type='nominal' />
+            <column-instance column='[VALOR]' derivation='Sum' name='[sum:VALOR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='720' />
+            <format attr='height' value='438' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0bbfjq710c9ca318kvwas0edn5ks].[sum:VALOR:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:TPGASTOS:nk]' />
+              <wedge-size column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[sum:VALOR:qk]' />
+              <size column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[sum:VALOR:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Tipo de Gasto:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:TPGASTOS:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Valor:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0bbfjq710c9ca318kvwas0edn5ks].[sum:VALOR:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9450275897979736' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <percentages enabled='false' mode='row' />
+      </table>
+      <simple-id uuid='{E164437E-93A5-4FA0-8329-DE88150BE6A7}' />
+    </worksheet>
+    <worksheet name='Planilha 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='C##CTFROTA' name='federated.0bbfjq710c9ca318kvwas0edn5ks' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bbfjq710c9ca318kvwas0edn5ks'>
+            <_.fcp.ObjectModelTableType.false...column caption='VEICULO' datatype='integer' name='[__tableau_internal_object_id__].[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]' role='measure' type='quantitative' />
+            <column caption='Tptracao' datatype='string' name='[TPTRACAO]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='VEICULO' datatype='table' name='[__tableau_internal_object_id__].[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TPTRACAO]' derivation='None' name='[none:TPTRACAO:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD:qk]' />
+              <text column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:TPTRACAO:nk]' />
+              <color column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:TPTRACAO:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8CB42956-8666-4FF0-B26F-2912C179FAC1}' />
+    </worksheet>
+    <worksheet name='Planilha 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='C##CTFROTA' name='federated.0bbfjq710c9ca318kvwas0edn5ks' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bbfjq710c9ca318kvwas0edn5ks'>
+            <_.fcp.ObjectModelTableType.false...column caption='CTVINCULO' datatype='integer' name='[__tableau_internal_object_id__].[CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369]' role='measure' type='quantitative' />
+            <column caption='Dsmodelo' datatype='string' name='[DSMODELO]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='CTVINCULO' datatype='table' name='[__tableau_internal_object_id__].[CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DSMODELO]' derivation='None' name='[none:DSMODELO:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369:qk]</rows>
+        <cols>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:DSMODELO:nk]</cols>
+      </table>
+      <simple-id uuid='{615DE8BE-F9FF-4BE5-86BC-D46939C3C4C2}' />
+    </worksheet>
+    <worksheet name='Planilha 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='C##CTFROTA' name='federated.0bbfjq710c9ca318kvwas0edn5ks' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bbfjq710c9ca318kvwas0edn5ks'>
+            <_.fcp.ObjectModelTableType.false...column caption='VEICULO' datatype='integer' name='[__tableau_internal_object_id__].[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]' role='measure' type='quantitative' />
+            <column caption='Dsmodelo' datatype='string' name='[DSMODELO]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='VEICULO' datatype='table' name='[__tableau_internal_object_id__].[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DSMODELO]' derivation='None' name='[none:DSMODELO:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD:qk]</rows>
+        <cols>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:DSMODELO:nk]</cols>
+      </table>
+      <simple-id uuid='{202599D5-AA80-41DB-A995-76E740480326}' />
+    </worksheet>
+    <worksheet name='Planilha 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Veiculos com  mais despesas</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='C##CTFROTA' name='federated.0bbfjq710c9ca318kvwas0edn5ks' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bbfjq710c9ca318kvwas0edn5ks'>
+            <column caption='Valor' datatype='real' name='[VALOR]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='DESPESAS' datatype='integer' name='[__tableau_internal_object_id__].[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Veiculo Idveiculo (Despesas)' datatype='real' name='[VEICULO_IDVEICULO (DESPESAS)]' role='dimension' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='DESPESAS' datatype='table' name='[__tableau_internal_object_id__].[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[VEICULO_IDVEICULO (DESPESAS)]' derivation='None' name='[none:VEICULO_IDVEICULO (DESPESAS):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[VALOR]' derivation='Sum' name='[sum:VALOR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:VEICULO_IDVEICULO (DESPESAS):qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:VEICULO_IDVEICULO (DESPESAS):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20:qk]' />
+              <color column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20:qk]' />
+              <text column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:VEICULO_IDVEICULO (DESPESAS):qk]' />
+              <lod column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[sum:VALOR:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8B4DA54F-74AB-4F86-B352-8D815335DA74}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Painel 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='25400' x='800' y='1000'>
+              <zone h='98000' id='3' name='Planilha 2' w='25400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='730' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='73000' x='26200' y='1000'>
+              <zone h='10750' id='8' name='Planilha 2' pane-specification-id='0' param='[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:TPGASTOS:nk]' type-v2='color' w='73000' x='26200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5750' id='9' name='Planilha 2' pane-specification-id='0' param='[federated.0bbfjq710c9ca318kvwas0edn5ks].[sum:VALOR:qk]' type-v2='size' w='73000' x='26200' y='11750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='37250' id='17' name='Planilha 6' w='73000' x='26200' y='17500'>
+                <layout-cache fixed-size-h='290' fixed-size-w='399' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='65' h='9125' id='18' is-fixed='true' name='Planilha 6' pane-specification-id='0' param='[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20:qk]' type-v2='color' w='73000' x='26200' y='54750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='19' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Planilha 2' w='25400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10750' id='8' name='Planilha 2' pane-specification-id='0' param='[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:TPGASTOS:nk]' type-v2='color' w='73000' x='26200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5750' id='9' name='Planilha 2' pane-specification-id='0' param='[federated.0bbfjq710c9ca318kvwas0edn5ks].[sum:VALOR:qk]' type-v2='size' w='73000' x='26200' y='11750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37250' id='17' is-fixed='true' name='Planilha 6' w='73000' x='26200' y='17500'>
+                  <layout-cache fixed-size-w='399' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='65' h='9125' id='18' name='Planilha 6' pane-specification-id='0' param='[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20:qk]' type-v2='color' w='73000' x='26200' y='54750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A4E579B9-73C6-42DB-A061-CC20E7B7959B}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Planilha 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='148'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:DSMODELO:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0767D65C-5FC8-4466-B63B-18653D6A3831}' />
+    </window>
+    <window class='worksheet' name='Planilha 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:TPGASTOS:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0bbfjq710c9ca318kvwas0edn5ks].[sum:VALOR:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:DSMODELO:nk]</field>
+            <field>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:TPGASTOS:nk]</field>
+            <field>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:TPVEICULO:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9924D485-8286-484C-B95E-3CD4CB976B08}' />
+    </window>
+    <window class='worksheet' name='Planilha 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:TPTRACAO:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:TPTRACAO:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D28C726C-4461-4DB7-9D07-65B170CA8745}' />
+    </window>
+    <window class='worksheet' name='Planilha 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369:qk]</field>
+            <field>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:DSMODELO:nk]</field>
+            <field>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:FORNECEDOR_COD:qk]</field>
+            <field>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:NMFORNECEDOR:nk]</field>
+            <field>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:TPGASTOS:nk]</field>
+            <field>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:VEICULO_IDVEICULO (DESPESAS):qk]</field>
+            <field>[federated.0bbfjq710c9ca318kvwas0edn5ks].[yr:DTEMISSAO:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D26A5200-94E3-425E-A608-2EC9AB131A64}' />
+    </window>
+    <window class='worksheet' name='Planilha 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:DSMODELO:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FDFAAC0C-8CBE-4A80-BFFE-1E7A647086C0}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Painel 1'>
+      <viewpoints>
+        <viewpoint name='Planilha 2'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:TPGASTOS:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Planilha 6'>
+          <highlight>
+            <color-one-way>
+              <field>[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20:qk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='6' />
+      <simple-id uuid='{836B0AD8-9AD2-4E38-BD83-5654F5FDA43D}' />
+    </window>
+    <window class='worksheet' name='Planilha 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:VEICULO_IDVEICULO (DESPESAS):qk]</field>
+            <field>[federated.0bbfjq710c9ca318kvwas0edn5ks].[sum:VALOR:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C2232AA7-D787-4967-9192-A526750430C8}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Painel 1' width='192'>
+      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
+      uP0h9reFOfv+Bbzt7URjGb7wkz24Inu5NXie2ckykaY6lgsl8tNxMokiMY/Cnt0HSSTi2IPN
+      LCXmWOq3k40n6dBl5NqNtOa3bd/92kbnWJNS0bENL0KVb2hlcbZg8+5e9Vjn/t0MXzxPtnjv
+      vYLhCOG6EN1tEQqqhYBLoVwukkxkOHjsZXxeH23tHYTrvGiVCp5gHR6PjyMH94HNxcL4DSId
+      uwkEPVicbhxqBnugmZ/9xZ8lEgigVTQCwSDxuTuky0GUUpa6+gDxeKKqn1U8maKvMeqDOv4+
+      +Td/w4g8a9LCbioHqjf8kav183ja/8PzpmBoYJCdBw7hsstcertYc4AM245XUQKtGzLg3bOw
+      xPPo02m09kAVpqbgrF97Cdd/Y5jvnhp48svPbO/LRc3msSPEOI79CsUf/cFGZnkiy0QK3edA
+      r1vfsKj2ulewujvW/NtsLMXfnh5d1/TF1vLYZbn94GdRXHUbmeWJFO5tFLPOMzjdLf+uOoHE
+      tvDYAih2N44Tv7aRWZ5KKWv3Nopf8FJGe/A4Nn9PlVOJrWzNjeAH9EqZ3F9+Fi2+ue6qrDV5
+      qewJP9+LFDvBQ3+M1dX+2Kdks8vkssvrTCe2kicWAECdvED+2/9po/I8M3V36LFnjq7F3fbL
+      uNu+UMNE4mnSiUWS+QqdrRGjozz01P15ts4PYT/+Hzciy3OxjiZQlovP9lzvflwtn6txIvE0
+      gVADleLmOtX6mXZoOz/6JSyRg7XO8lwUHawjS1B68jXMitWLb/dvo1iqfzRZPJ9EbJbR0Qk2
+      03V4T10FekDLRMm98Tn07Oa6oZQWdFJ5qREU5dE/KjZ8e34XR93xjQ8mtoRnPqRp8TXh/uzX
+      wFmNg1HVY0kVH3PmqIK3+7/Ij1880XMd07fW78LzC1/dVMcH4N6Zo8riyptcKXi7v4SzYXOc
+      0yQ2r2deBVqpEr9L/u++iL48X4tML0S3KKiHm8B3b53fEfqI0ZHEFvBCZ3VZwzvxfP4NLC1H
+      q53nhSmajn3Ghn///5Ifv3hmL7QEeEDXVEpn/x+lvq9j9C3VrTs/ifvf/E8U9+NvrSLEB62r
+      AA9U5gcpvPsVtIUb1cj0XBRfBOdHv4S95+c2/L3F1leVAgDoukZ58G8oXfhT9MwGjL5ic2E/
+      8nmcJ7+I4tpce6bE1lG1AjygayrqzbcpXfoztMXqjzWgeOqxH/4cjqO/JKs7Yt2qXoCVKou3
+      UUe+R/n2v6AnX3xkRsUdxrbrk9j2fQZr+wkUy2MvYxDiudS0ACtpmSiV6T4q0WH05CRaYhw9
+      F0cv56BSAosd7G4UVwBLXReWYDuWhj1Y209grZdbmIja2LACPImuayiKXGcrNt6mKIAQRpHZ
+      rjA1KYAwNSmAMDUpgDA1KYAwNSmAMDUpgDA1KYAwNSmAMDUpgDA1KYAwNSmAMDUpgDA1KYAw
+      NSmAMDUpgDA1KYAwNSmAMDUpgDA1KYAwNSmAMDUpgDA1KYAwNSmAMDUpgDA1KYAwNSmAMDUp
+      gDA1KYAwNSmAMDUpgDA1KYAwNSmAMDUpgDA1KYAwNSmAMDUpgDA1KYAwNSmAMDUpgDA1KYAw
+      NSmAMDUpgDA1KYAwNSmAMDUpgDA1KYAwNSmAMDUpgDA1KYAwNSmAMDUpgDA1KYAwNSmAMDUp
+      gDC1fwWLRPILmz4D2QAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Planilha 1' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Planilha 2' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Planilha 3' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Planilha 4' width='192'>
+      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
+      PzuaYkzov4xLAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Planilha 5' width='192'>
+      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
+      AAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Planilha 6' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAEfElEQVR4nO3Z3W9TdQDG8Wc7p6dva6hLkbAXhjAdoWAgCyNquPDCG8Mf6o03u1GDxpgm
+      +IIuyxrAxSore+nYbBHU8NKd1gtiMKZJZ9JzFny+n8tz9Vycb/r7nY71+/2+AFPjRz0AOEoE
+      AGsEAGsEAGvhoIcff7mq1fWttLcAqRsYwMqPm1qu1dPeAqSOIxCsEQCsHSqAiXxW2ejlaSkT
+      BirmI0lSFAYq5KJk1gEJG3gH+KeZ18u69NaMclGo5VpdcdzXh+9WlYtCfX/3vi4vzCgMAtVW
+      G9ref5TGZmBkhgawtfeb/nzyTBfOTimO+yrkIm0+eKjG1r6unJ/TL9ttNXc7mj3xGgHglTM0
+      gEq5qDNTFdVWf5Ykxb2eJvKRCrlIT551VSpkVcxHet49SHwsMGpD7wBTlWOanz2u6+9VdfHs
+      lI4Vc3raPdA7F99QvbGtbhzr8sKsNlqdNPYCIzX0F2CtsaO1xo6kFzG02o/Vaj+W1JQk3Vy7
+      l+hAIEn/6TPozq+c8fH/wv8AsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYA
+      sEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYA
+      sEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYA
+      sEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYA
+      sEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsBYOeni1Oqd8
+      NpP2FiB1AwP49nZTy7V62luA1HEEgjUCgDUCgLWBd4B/Wzo/pzPTFX104weNj43p+rULmiwV
+      9MWtdS1VT6tUzOqTm3f0oPN70nuBkRoaQKmQUyEXae/hi5e7mI+0s/9IX638pMVzp9Tc7Wij
+      1db08TIB4JUzNID3F99UpTyhE5MlfXe7qV6/r0wYKAwCHcQ9RWGgTBgo7vXS2AuM1NAAlmt1
+      hcG43p6fVqVc1NPnXWUzgT5YWtBn39zV4rlTunZpXp9+fSeNvcBIHeoOcBD3tLK+qdMnJ7XX
+      +UO77ZdHnc9vrSc2DkjaoQL420ark9QO4EjwGRTWCADWCADWCADWCADWCADWCADWCADWCADW
+      CADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADW
+      CADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADW
+      CADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADW
+      CADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADW
+      CADWwkEPr1bnlM9m0t4CpO4v/3CtxcMZptUAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

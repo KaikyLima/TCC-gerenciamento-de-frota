@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TelaLogin</class>
+ <widget class="QWidget" name="TelaLogin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>364</width>
+    <height>308</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Login</string>
+  </property>
+  <widget class="QLabel" name="iconLogin">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>130</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Images/sem_fundo_login_icon_35px-removebg-preview.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="dsLogin">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>140</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Login</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="nrSenha">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>180</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Senha</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>240</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LOGIN</string>
+   </property>
+   <property name="icon">
+    <iconset theme="icon">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="iconPerfil">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>10</y>
+     <width>111</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Images/iconPerfil-removebg-preview.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="iconSenha">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>170</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Images/iconSenhaOficial-removebg-preview.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="backgroud">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>-70</y>
+     <width>701</width>
+     <height>531</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Images/fundo 2.jpg</pixmap>
+   </property>
+  </widget>
+  <zorder>backgroud</zorder>
+  <zorder>iconLogin</zorder>
+  <zorder>dsLogin</zorder>
+  <zorder>nrSenha</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>iconPerfil</zorder>
+  <zorder>iconSenha</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
