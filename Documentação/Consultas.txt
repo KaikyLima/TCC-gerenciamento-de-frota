@@ -1,0 +1,71 @@
+-- Especificação das Consultas
+
+ SELECT COUNT(*) AS total_veiculos --Quantidade total de veículos cadastrados
+FROM c##ctfrota.veiculo
+------------------------------------------------------------------
+SELECT NMMOTORISTA, FUNCIONARIO_NRMATRICULA
+FROM c##ctfrota.Motorista
+GROUP BY NMMOTORISTA, FUNCIONARIO_NRMATRICULA;
+
+------------------------------------------------------------------
+SELECT --Todos os Vinculos
+    M.NMMOTORISTA,
+    M.FUNCIONARIO_NRMATRICULA,
+    V.NRFROTA,
+    CT.DTVINCULO,
+    CT.DTDESVINCULO
+FROM
+    c##ctfrota.Motorista M
+INNER JOIN
+    c##ctfrota.CtVinculo CT ON M.IDMOTORISTA = CT.MOTORISTA_IDMOTORISTA
+INNER JOIN
+    c##ctfrota.Veiculo V ON CT.VEICULO_IDVEICULO = V.IDVEICULO;
+
+------------------------------------------------------------------
+SELECT DISTINCT
+    M.NMMOTORISTA,
+    M.FUNCIONARIO_NRMATRICULA
+FROM
+    c##ctfrota.Motorista M
+INNER JOIN
+    c##ctfrota.CtVinculo CT ON M.IDMOTORISTA = CT.MOTORISTA_IDMOTORISTA
+INNER JOIN
+    c##ctfrota.Veiculo V ON CT.VEICULO_IDVEICULO = V.IDVEICULO
+WHERE
+    V.NRFROTA = '5030'
+    AND CT.DTVINCULO BETWEEN TO_DATE('01/01/2023', 'DD/MM/YYYY') AND TO_DATE('31/12/2024', 'DD/MM/YYYY');
+
+
+------------------------------------------------------------------
+
+SELECT --Total de vínculos feitos, Trazendo a frota, matricula e nome do motorista
+    CT.DTVINCULO,
+    CT.DTDESVINCULO, 
+    CT.MOTORISTA_IDMOTORISTA AS IDMOTORA, 
+    M.NMMOTORISTA, 
+    CT.VEICULO_IDVEICULO, 
+    V.NRFROTA,
+    (
+        SELECT COUNT(*) 
+        FROM c##ctfrota.CtVinculo sub_ct
+        WHERE sub_ct.VEICULO_IDVEICULO = CT.VEICULO_IDVEICULO
+        AND sub_ct.MOTORISTA_IDMOTORISTA = CT.MOTORISTA_IDMOTORISTA
+    ) AS TOTAL_VINCULOS
+FROM c##ctfrota.CtVinculo CT
+INNER JOIN c##ctfrota.Motorista M ON CT.MOTORISTA_IDMOTORISTA = M.IDMOTORISTA
+INNER JOIN c##ctfrota.Veiculo V ON CT.VEICULO_IDVEICULO = V.IDVEICULO;
+------------------------------------------------------------------
+
+SELECT 
+    V.NRFROTA,
+    CT.MOTORISTA_IDMOTORISTA AS IDMOTORA, 
+    M.NMMOTORISTA, 
+    CT.VEICULO_IDVEICULO,
+    COUNT(CT.VEICULO_IDVEICULO) AS TOTAL_VINCULOS
+FROM c##ctfrota.Veiculo V
+LEFT JOIN c##ctfrota.CtVinculo CT ON V.IDVEICULO = CT.VEICULO_IDVEICULO
+LEFT JOIN c##ctfrota.Motorista M ON CT.MOTORISTA_IDMOTORISTA = M.IDMOTORISTA
+GROUP BY V.NRFROTA, CT.MOTORISTA_IDMOTORISTA, M.NMMOTORISTA, CT.VEICULO_IDVEICULO;
+
+------------------------------------------------------------------
+

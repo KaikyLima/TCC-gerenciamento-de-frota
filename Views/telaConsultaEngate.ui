@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>680</width>
+    <height>471</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Consultas</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tabelaConsulta">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>110</y>
+      <width>531</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>671</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+    </property>
+    <column>
+     <property name="text">
+      <string>Data de engate</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Data desengate</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Nº Frota</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Placa Frota</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Nº  Conjunto</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLineEdit" name="textofiltro">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>60</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>Pesquise por Frota ou Conjunto</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="botaofiltrar">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>60</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sitka</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Filtrar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="botaoFiltrarEngatesAtivos">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>60</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sitka</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Engates ativos</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="limparfiltro">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>60</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sitka</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Limpar filtros</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fundo">
+    <property name="geometry">
+     <rect>
+      <x>-170</x>
+      <y>-10</y>
+      <width>1301</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Images/77.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="VoltarMenu">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent;
+    border: none;
+    color: white;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Images/fast_backward_double_chevron_back_previous_left_icon_258776.png</pixmap>
+    </property>
+   </widget>
+   <zorder>fundo</zorder>
+   <zorder>tabelaConsulta</zorder>
+   <zorder>textofiltro</zorder>
+   <zorder>botaofiltrar</zorder>
+   <zorder>botaoFiltrarEngatesAtivos</zorder>
+   <zorder>limparfiltro</zorder>
+   <zorder>label</zorder>
+   <zorder>VoltarMenu</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

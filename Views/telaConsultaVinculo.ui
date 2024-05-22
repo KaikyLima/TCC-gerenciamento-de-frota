@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>813</width>
+    <height>515</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Vínculo Motorista</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tabelaConsulta">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>100</y>
+      <width>651</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+    </property>
+    <column>
+     <property name="text">
+      <string>Data Vínculo</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Data Desvinculo</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Nº  frota</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Motorista</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLineEdit" name="textofiltro">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>30</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>Pesquise por Frota/Motorista</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>-240</x>
+      <y>-60</y>
+      <width>1151</width>
+      <height>721</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Images/77.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="botaofiltrar">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>30</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sitka</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Filtrar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="limparfiltro">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>30</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sitka</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Limpar filtros</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="botaoFiltrarVinculosAtivos">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>30</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sitka</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Vínculos ativos</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="VoltarMenu">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent;
+    border: none;
+    color: white;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Images/fast_backward_double_chevron_back_previous_left_icon_258776.png</pixmap>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>tabelaConsulta</zorder>
+   <zorder>textofiltro</zorder>
+   <zorder>botaofiltrar</zorder>
+   <zorder>limparfiltro</zorder>
+   <zorder>botaoFiltrarVinculosAtivos</zorder>
+   <zorder>label_3</zorder>
+   <zorder>VoltarMenu</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
