@@ -10,7 +10,10 @@ from consultar_veiculo_view import ConsultarVeiculo
 from consultar_vinculo_view import ConsultarVinculos
 from consultar_engate_view import ConsultarEngates
 import datetime
+<<<<<<< HEAD
 from cadastroFornecedor import cadastroFornecedor
+=======
+>>>>>>> 2a4ffb52af6777755d396bbfdfcf2bfa55ac30ac
 class MenuInicial(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
@@ -35,7 +38,10 @@ class MenuInicial(QtWidgets.QMainWindow):
         self.consultar_veiculo_view         = None
         self.consultar_vinculo_view         = None
         self.consultar_engate_view          = None
+<<<<<<< HEAD
         self.cadastroFornecedor             = None
+=======
+>>>>>>> 2a4ffb52af6777755d396bbfdfcf2bfa55ac30ac
 
         # Obter a data atual
         data_atual = datetime.date.today()
@@ -44,9 +50,15 @@ class MenuInicial(QtWidgets.QMainWindow):
         self.dtAtual.setDate(QDate.fromString(data_atual.strftime('%d-%m-%Y'), 'dd-MM-yyyy'))
 
     def ChamarTelaCadastroForne(self):
+<<<<<<< HEAD
         if not self.cadastroFornecedor:
             self.cadastroFornecedor = cadastroFornecedor()
         self.cadastroFornecedor.show()
+=======
+        if not self.consultarFornecedor:
+            self.consultarFornecedor = consultarFornecedor()
+        self.consultarFornecedor.show()
+>>>>>>> 2a4ffb52af6777755d396bbfdfcf2bfa55ac30ac
 
     def ChamarTelaConsultaVeic(self):
         if not self.consultar_veiculo_view:

@@ -201,8 +201,13 @@ class CadastroFuncionarioView(QtWidgets.QMainWindow):
 
             # Verificar se é edição ou criação
             if nrCPF or nrMatricula:
+<<<<<<< HEAD
                 funcionario_existente = session.query(Funcionario, Pessoa).filter(
                     Funcionario.NRMATRICULA == nrMatricula).join(Pessoa, Pessoa.IDPESSOA == Funcionario.PESSOA_IDPESSOA).first()
+=======
+                funcionario_existente = session.query(Funcionario).filter(
+                    Funcionario.NRMATRICULA == nrMatricula).first()
+>>>>>>> 2a4ffb52af6777755d396bbfdfcf2bfa55ac30ac
                 if funcionario_existente:
                     self.atualizar_funcionario(funcionario_existente)
                     return 0
@@ -238,11 +243,20 @@ class CadastroFuncionarioView(QtWidgets.QMainWindow):
             session.rollback()
             QMessageBox.critical(self, "Erro", f"Ocorreu um erro ao realizar o cadastro: {e}")
             self.limpar_campos()
+<<<<<<< HEAD
     def atualizar_funcionario(self, funcionario_existente: Funcionario):
         try:
             funcionario_existente.NRCPF = self.nrCPF.text()
             funcionario_existente.NMPESSOA = self.nmFuncionario.text()
             funcionario_existente.DTNASCIMENTO = self.dtNascimento.date().toPyDate()
+=======
+    def atualizar_funcionario(self, funcionario_existente):
+        try:
+            # Atualizar os dados da pessoa
+            pessoa = funcionario_existente.pessoa
+            pessoa.NRCPF = self.nrCPF.text()
+            pessoa.DTNASCIMENTO = self.dtNascimento.date().toPyDate()
+>>>>>>> 2a4ffb52af6777755d396bbfdfcf2bfa55ac30ac
             session.commit()
 
             # Atualizar os dados do funcionário
