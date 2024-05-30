@@ -22,10 +22,8 @@ session = Session()
 
 usuario = "C##CTFROTA"
 session.execute(text(f"ALTER SESSION SET CURRENT_SCHEMA = {usuario}"))
-<<<<<<< HEAD
-=======
+
 
 '''result = session.execute(text("SELECT * FROM C##CTFROTA.MOTORISTA"))
 for row in result:
     print(row)'''
->>>>>>> 2a4ffb52af6777755d396bbfdfcf2bfa55ac30ac
