@@ -1,0 +1,1723 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelRelationshipPerfOptions.true...ObjectModelRelationshipPerfOptions />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-style' value='as-synced' />
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource caption='C##CTFROTA' inline='true' name='federated.0bbfjq710c9ca318kvwas0edn5ks' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='DESKTOP-14HLTJ9' name='oracle.1v1shl413cm3qm0zzmxi310vey1v'>
+            <connection authentication='RDBMS' class='oracle' one-time-sql='' port='1521' schema='C##CTFROTA' server='DESKTOP-14HLTJ9' service='' sslmode='' username='system' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='CTENGATE' table='[C##CTFROTA].[CTENGATE]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='CTENGATE' table='[C##CTFROTA].[CTENGATE]' type='table' />
+          <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='VEICULO' table='[C##CTFROTA].[VEICULO]' type='table' />
+          <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='CTVINCULO' table='[C##CTFROTA].[CTVINCULO]' type='table' />
+          <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='MOTORISTA' table='[C##CTFROTA].[MOTORISTA]' type='table' />
+          <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='FUNCIONARIO' table='[C##CTFROTA].[FUNCIONARIO]' type='table' />
+          <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='PESSOA' table='[C##CTFROTA].[PESSOA]' type='table' />
+          <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='DESPESAS' table='[C##CTFROTA].[DESPESAS]' type='table' />
+          <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='FORNECEDOR' table='[C##CTFROTA].[FORNECEDOR]' type='table' />
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[CNPJ]' value='[FORNECEDOR].[CNPJ]' />
+          <map key='[COD (FORNECEDOR)]' value='[FORNECEDOR].[COD]' />
+          <map key='[COD]' value='[DESPESAS].[COD]' />
+          <map key='[DSFUNCAO]' value='[FUNCIONARIO].[DSFUNCAO]' />
+          <map key='[DSMODELO]' value='[VEICULO].[DSMODELO]' />
+          <map key='[DTADMISSAO]' value='[FUNCIONARIO].[DTADMISSAO]' />
+          <map key='[DTAQUISICAO]' value='[VEICULO].[DTAQUISICAO]' />
+          <map key='[DTDESENGATE]' value='[CTENGATE].[DTDESENGATE]' />
+          <map key='[DTDESVINCULO]' value='[CTVINCULO].[DTDESVINCULO]' />
+          <map key='[DTEMISSAO]' value='[DESPESAS].[DTEMISSAO]' />
+          <map key='[DTENGATE]' value='[CTENGATE].[DTENGATE]' />
+          <map key='[DTNASCIMENTO]' value='[PESSOA].[DTNASCIMENTO]' />
+          <map key='[DTVINCULO]' value='[CTVINCULO].[DTVINCULO]' />
+          <map key='[FORNECEDOR_COD]' value='[DESPESAS].[FORNECEDOR_COD]' />
+          <map key='[FUNCIONARIO_NRMATRICULA]' value='[MOTORISTA].[FUNCIONARIO_NRMATRICULA]' />
+          <map key='[ID (CTVINCULO)]' value='[CTVINCULO].[ID]' />
+          <map key='[IDMOTORISTA]' value='[MOTORISTA].[IDMOTORISTA]' />
+          <map key='[IDPESSOA]' value='[PESSOA].[IDPESSOA]' />
+          <map key='[IDVEICULO]' value='[VEICULO].[IDVEICULO]' />
+          <map key='[ID]' value='[CTENGATE].[ID]' />
+          <map key='[MOTORISTA_IDMOTORISTA]' value='[CTVINCULO].[MOTORISTA_IDMOTORISTA]' />
+          <map key='[NMFORNECEDOR]' value='[FORNECEDOR].[NMFORNECEDOR]' />
+          <map key='[NMFUNCIONARIO]' value='[FUNCIONARIO].[NMFUNCIONARIO]' />
+          <map key='[NMMOTORISTA]' value='[MOTORISTA].[NMMOTORISTA]' />
+          <map key='[NMPESSOA]' value='[PESSOA].[NMPESSOA]' />
+          <map key='[NRCHASSI]' value='[VEICULO].[NRCHASSI]' />
+          <map key='[NRCONJUNTO (VEICULO)]' value='[VEICULO].[NRCONJUNTO]' />
+          <map key='[NRCONJUNTO]' value='[CTENGATE].[NRCONJUNTO]' />
+          <map key='[NRCPF]' value='[PESSOA].[NRCPF]' />
+          <map key='[NRFROTA (VEICULO)]' value='[VEICULO].[NRFROTA]' />
+          <map key='[NRFROTA]' value='[CTENGATE].[NRFROTA]' />
+          <map key='[NRMATRICULA]' value='[FUNCIONARIO].[NRMATRICULA]' />
+          <map key='[NRNOTA]' value='[DESPESAS].[NRNOTA]' />
+          <map key='[NRPLACA]' value='[VEICULO].[NRPLACA]' />
+          <map key='[NRRENAVAM]' value='[VEICULO].[NRRENAVAM]' />
+          <map key='[OBSERVACAO]' value='[DESPESAS].[OBSERVACAO]' />
+          <map key='[PESSOA_IDPESSOA]' value='[FUNCIONARIO].[PESSOA_IDPESSOA]' />
+          <map key='[QTEIXO]' value='[VEICULO].[QTEIXO]' />
+          <map key='[TPGASTOS]' value='[DESPESAS].[TPGASTOS]' />
+          <map key='[TPSITUACAO (FUNCIONARIO)]' value='[FUNCIONARIO].[TPSITUACAO]' />
+          <map key='[TPTRACAO]' value='[VEICULO].[TPTRACAO]' />
+          <map key='[TPVEICULO]' value='[VEICULO].[TPVEICULO]' />
+          <map key='[VALOR]' value='[DESPESAS].[VALOR]' />
+          <map key='[VEICULO_IDVEICULO (CTVINCULO)]' value='[CTVINCULO].[VEICULO_IDVEICULO]' />
+          <map key='[VEICULO_IDVEICULO (DESPESAS)]' value='[DESPESAS].[VEICULO_IDVEICULO]' />
+          <map key='[VEICULO_IDVEICULO (VEICULO)]' value='[VEICULO].[VEICULO_IDVEICULO]' />
+          <map key='[VEICULO_IDVEICULO]' value='[CTENGATE].[VEICULO_IDVEICULO]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[CTENGATE]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DTENGATE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DTENGATE]</local-name>
+            <parent-name>[CTENGATE]</parent-name>
+            <remote-alias>DTENGATE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DTDESENGATE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DTDESENGATE]</local-name>
+            <parent-name>[CTENGATE]</parent-name>
+            <remote-alias>DTDESENGATE</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VEICULO_IDVEICULO</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[VEICULO_IDVEICULO]</local-name>
+            <parent-name>[CTENGATE]</parent-name>
+            <remote-alias>VEICULO_IDVEICULO</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NRFROTA</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[NRFROTA]</local-name>
+            <parent-name>[CTENGATE]</parent-name>
+            <remote-alias>NRFROTA</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NRCONJUNTO</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[NRCONJUNTO]</local-name>
+            <parent-name>[CTENGATE]</parent-name>
+            <remote-alias>NRCONJUNTO</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IDVEICULO</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[IDVEICULO]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>IDVEICULO</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NRPLACA</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NRPLACA]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>NRPLACA</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>7</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_AFC{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DSMODELO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DSMODELO]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>DSMODELO</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>100</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TPTRACAO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TPTRACAO]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>TPTRACAO</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>40</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NRRENAVAM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NRRENAVAM]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>NRRENAVAM</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>11</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_AFC{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DTAQUISICAO</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DTAQUISICAO]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>DTAQUISICAO</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NRFROTA</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[NRFROTA (VEICULO)]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>NRFROTA</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NRCONJUNTO</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[NRCONJUNTO (VEICULO)]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>NRCONJUNTO</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NRCHASSI</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NRCHASSI]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>NRCHASSI</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>17</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>QTEIXO</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[QTEIXO]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>QTEIXO</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VEICULO_IDVEICULO</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[VEICULO_IDVEICULO (VEICULO)]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>VEICULO_IDVEICULO</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TPVEICULO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TPVEICULO]</local-name>
+            <parent-name>[VEICULO]</parent-name>
+            <remote-alias>TPVEICULO</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[ID (CTVINCULO)]</local-name>
+            <parent-name>[CTVINCULO]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DTVINCULO</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DTVINCULO]</local-name>
+            <parent-name>[CTVINCULO]</parent-name>
+            <remote-alias>DTVINCULO</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DTDESVINCULO</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DTDESVINCULO]</local-name>
+            <parent-name>[CTVINCULO]</parent-name>
+            <remote-alias>DTDESVINCULO</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MOTORISTA_IDMOTORISTA</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[MOTORISTA_IDMOTORISTA]</local-name>
+            <parent-name>[CTVINCULO]</parent-name>
+            <remote-alias>MOTORISTA_IDMOTORISTA</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VEICULO_IDVEICULO</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[VEICULO_IDVEICULO (CTVINCULO)]</local-name>
+            <parent-name>[CTVINCULO]</parent-name>
+            <remote-alias>VEICULO_IDVEICULO</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IDMOTORISTA</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[IDMOTORISTA]</local-name>
+            <parent-name>[MOTORISTA]</parent-name>
+            <remote-alias>IDMOTORISTA</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MOTORISTA (C##CTFROTA.MOTORISTA)_31CD5B1799D84DC8BBB9A4317AE6C8AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NMMOTORISTA</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NMMOTORISTA]</local-name>
+            <parent-name>[MOTORISTA]</parent-name>
+            <remote-alias>NMMOTORISTA</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>100</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MOTORISTA (C##CTFROTA.MOTORISTA)_31CD5B1799D84DC8BBB9A4317AE6C8AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FUNCIONARIO_NRMATRICULA</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[FUNCIONARIO_NRMATRICULA]</local-name>
+            <parent-name>[MOTORISTA]</parent-name>
+            <remote-alias>FUNCIONARIO_NRMATRICULA</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MOTORISTA (C##CTFROTA.MOTORISTA)_31CD5B1799D84DC8BBB9A4317AE6C8AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NRMATRICULA</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[NRMATRICULA]</local-name>
+            <parent-name>[FUNCIONARIO]</parent-name>
+            <remote-alias>NRMATRICULA</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FUNCIONARIO (C##CTFROTA.FUNCIONARIO)_DD3215FA57DA4E08984733A214E6D832]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NMFUNCIONARIO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NMFUNCIONARIO]</local-name>
+            <parent-name>[FUNCIONARIO]</parent-name>
+            <remote-alias>NMFUNCIONARIO</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>100</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FUNCIONARIO (C##CTFROTA.FUNCIONARIO)_DD3215FA57DA4E08984733A214E6D832]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DSFUNCAO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DSFUNCAO]</local-name>
+            <parent-name>[FUNCIONARIO]</parent-name>
+            <remote-alias>DSFUNCAO</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>100</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FUNCIONARIO (C##CTFROTA.FUNCIONARIO)_DD3215FA57DA4E08984733A214E6D832]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DTADMISSAO</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DTADMISSAO]</local-name>
+            <parent-name>[FUNCIONARIO]</parent-name>
+            <remote-alias>DTADMISSAO</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FUNCIONARIO (C##CTFROTA.FUNCIONARIO)_DD3215FA57DA4E08984733A214E6D832]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PESSOA_IDPESSOA</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[PESSOA_IDPESSOA]</local-name>
+            <parent-name>[FUNCIONARIO]</parent-name>
+            <remote-alias>PESSOA_IDPESSOA</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FUNCIONARIO (C##CTFROTA.FUNCIONARIO)_DD3215FA57DA4E08984733A214E6D832]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TPSITUACAO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TPSITUACAO (FUNCIONARIO)]</local-name>
+            <parent-name>[FUNCIONARIO]</parent-name>
+            <remote-alias>TPSITUACAO</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FUNCIONARIO (C##CTFROTA.FUNCIONARIO)_DD3215FA57DA4E08984733A214E6D832]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IDPESSOA</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[IDPESSOA]</local-name>
+            <parent-name>[PESSOA]</parent-name>
+            <remote-alias>IDPESSOA</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PESSOA (C##CTFROTA.PESSOA)_8A5323DFD5F24BE78029346F7C9BFC19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NMPESSOA</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NMPESSOA]</local-name>
+            <parent-name>[PESSOA]</parent-name>
+            <remote-alias>NMPESSOA</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>100</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PESSOA (C##CTFROTA.PESSOA)_8A5323DFD5F24BE78029346F7C9BFC19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NRCPF</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NRCPF]</local-name>
+            <parent-name>[PESSOA]</parent-name>
+            <remote-alias>NRCPF</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>11</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_AFC{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PESSOA (C##CTFROTA.PESSOA)_8A5323DFD5F24BE78029346F7C9BFC19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DTNASCIMENTO</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DTNASCIMENTO]</local-name>
+            <parent-name>[PESSOA]</parent-name>
+            <remote-alias>DTNASCIMENTO</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PESSOA (C##CTFROTA.PESSOA)_8A5323DFD5F24BE78029346F7C9BFC19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COD</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[COD]</local-name>
+            <parent-name>[DESPESAS]</parent-name>
+            <remote-alias>COD</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TPGASTOS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TPGASTOS]</local-name>
+            <parent-name>[DESPESAS]</parent-name>
+            <remote-alias>TPGASTOS</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>100</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DTEMISSAO</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DTEMISSAO]</local-name>
+            <parent-name>[DESPESAS]</parent-name>
+            <remote-alias>DTEMISSAO</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NRNOTA</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NRNOTA]</local-name>
+            <parent-name>[DESPESAS]</parent-name>
+            <remote-alias>NRNOTA</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>10</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_AFC{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VALOR</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[VALOR]</local-name>
+            <parent-name>[DESPESAS]</parent-name>
+            <remote-alias>VALOR</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OBSERVACAO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OBSERVACAO]</local-name>
+            <parent-name>[DESPESAS]</parent-name>
+            <remote-alias>OBSERVACAO</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>300</width>
+            <contains-null>true</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VEICULO_IDVEICULO</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[VEICULO_IDVEICULO (DESPESAS)]</local-name>
+            <parent-name>[DESPESAS]</parent-name>
+            <remote-alias>VEICULO_IDVEICULO</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FORNECEDOR_COD</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[FORNECEDOR_COD]</local-name>
+            <parent-name>[DESPESAS]</parent-name>
+            <remote-alias>FORNECEDOR_COD</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COD</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[COD (FORNECEDOR)]</local-name>
+            <parent-name>[FORNECEDOR]</parent-name>
+            <remote-alias>COD</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FORNECEDOR (C##CTFROTA.FORNECEDOR)_4A21E9D6CD29491997681C34C2EE7ED3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CNPJ</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CNPJ]</local-name>
+            <parent-name>[FORNECEDOR]</parent-name>
+            <remote-alias>CNPJ</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>14</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_AFC{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FORNECEDOR (C##CTFROTA.FORNECEDOR)_4A21E9D6CD29491997681C34C2EE7ED3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NMFORNECEDOR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NMFORNECEDOR]</local-name>
+            <parent-name>[FORNECEDOR]</parent-name>
+            <remote-alias>NMFORNECEDOR</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>200</width>
+            <contains-null>false</contains-null>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FORNECEDOR (C##CTFROTA.FORNECEDOR)_4A21E9D6CD29491997681C34C2EE7ED3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Cnpj' datatype='string' name='[CNPJ]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Cod (Fornecedor)' datatype='real' name='[COD (FORNECEDOR)]' role='dimension' type='quantitative' />
+      <column caption='Dsfuncao' datatype='string' name='[DSFUNCAO]' role='dimension' type='nominal' />
+      <column caption='Dsmodelo' datatype='string' name='[DSMODELO]' role='dimension' type='nominal' />
+      <column caption='Dtadmissao' datatype='datetime' name='[DTADMISSAO]' role='dimension' type='ordinal' />
+      <column caption='Dtaquisicao' datatype='datetime' name='[DTAQUISICAO]' role='dimension' type='ordinal' />
+      <column caption='Dtdesengate' datatype='datetime' name='[DTDESENGATE]' role='dimension' type='ordinal' />
+      <column caption='Dtdesvinculo' datatype='datetime' name='[DTDESVINCULO]' role='dimension' type='ordinal' />
+      <column caption='Dtemissao' datatype='datetime' name='[DTEMISSAO]' role='dimension' type='ordinal' />
+      <column caption='Dtengate' datatype='datetime' name='[DTENGATE]' role='dimension' type='ordinal' />
+      <column caption='Dtnascimento' datatype='datetime' name='[DTNASCIMENTO]' role='dimension' type='ordinal' />
+      <column caption='Dtvinculo' datatype='datetime' name='[DTVINCULO]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Fornecedor Cod' datatype='real' name='[FORNECEDOR_COD]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' caption='Funcionario Nrmatricula' datatype='real' name='[FUNCIONARIO_NRMATRICULA]' role='dimension' type='quantitative' />
+      <column caption='Id (Ctvinculo)' datatype='real' name='[ID (CTVINCULO)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Idmotorista' datatype='real' name='[IDMOTORISTA]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' caption='Idpessoa' datatype='real' name='[IDPESSOA]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' caption='Idveiculo' datatype='real' name='[IDVEICULO]' role='dimension' type='quantitative' />
+      <column datatype='real' name='[ID]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Motorista Idmotorista' datatype='real' name='[MOTORISTA_IDMOTORISTA]' role='dimension' type='quantitative' />
+      <column caption='Nmfornecedor' datatype='string' name='[NMFORNECEDOR]' role='dimension' type='nominal' />
+      <column caption='Nmfuncionario' datatype='string' name='[NMFUNCIONARIO]' role='dimension' type='nominal' />
+      <column caption='Nmmotorista' datatype='string' name='[NMMOTORISTA]' role='dimension' type='nominal' />
+      <column caption='Nmpessoa' datatype='string' name='[NMPESSOA]' role='dimension' type='nominal' />
+      <column caption='Nrchassi' datatype='string' name='[NRCHASSI]' role='dimension' type='nominal' />
+      <column caption='Nrconjunto (Veiculo)' datatype='real' name='[NRCONJUNTO (VEICULO)]' role='measure' type='quantitative' />
+      <column caption='Nrconjunto' datatype='real' name='[NRCONJUNTO]' role='measure' type='quantitative' />
+      <column caption='Nrcpf' datatype='string' name='[NRCPF]' role='dimension' type='nominal' />
+      <column caption='Nrfrota (Veiculo)' datatype='real' name='[NRFROTA (VEICULO)]' role='measure' type='quantitative' />
+      <column caption='Nrfrota' datatype='real' name='[NRFROTA]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Nrmatricula' datatype='real' name='[NRMATRICULA]' role='dimension' type='quantitative' />
+      <column caption='Nrnota' datatype='string' name='[NRNOTA]' role='dimension' type='nominal' />
+      <column caption='Nrplaca' datatype='string' name='[NRPLACA]' role='dimension' type='nominal' />
+      <column caption='Nrrenavam' datatype='string' name='[NRRENAVAM]' role='dimension' type='nominal' />
+      <column caption='Observacao' datatype='string' name='[OBSERVACAO]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Pessoa Idpessoa' datatype='real' name='[PESSOA_IDPESSOA]' role='dimension' type='quantitative' />
+      <column caption='Qteixo' datatype='real' name='[QTEIXO]' role='measure' type='quantitative' />
+      <column caption='Tpgastos' datatype='string' name='[TPGASTOS]' role='dimension' type='nominal' />
+      <column caption='Tptracao' datatype='string' name='[TPTRACAO]' role='dimension' type='nominal' />
+      <column caption='Tpveiculo' datatype='string' name='[TPVEICULO]' role='dimension' type='nominal' />
+      <column caption='Valor' datatype='real' name='[VALOR]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Veiculo Idveiculo (Ctvinculo)' datatype='real' name='[VEICULO_IDVEICULO (CTVINCULO)]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' caption='Veiculo Idveiculo (Despesas)' datatype='real' name='[VEICULO_IDVEICULO (DESPESAS)]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' caption='Veiculo Idveiculo (Veiculo)' datatype='real' name='[VEICULO_IDVEICULO (VEICULO)]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' caption='Veiculo Idveiculo' datatype='real' name='[VEICULO_IDVEICULO]' role='dimension' type='quantitative' />
+      <column aggregation='None' datatype='integer' name='[Valor (compartimento)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='3' formula='[VALOR]' peg='0' size='4193' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='CTENGATE' datatype='table' name='[__tableau_internal_object_id__].[CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='CTVINCULO' datatype='table' name='[__tableau_internal_object_id__].[CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='DESPESAS' datatype='table' name='[__tableau_internal_object_id__].[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='FORNECEDOR' datatype='table' name='[__tableau_internal_object_id__].[FORNECEDOR (C##CTFROTA.FORNECEDOR)_4A21E9D6CD29491997681C34C2EE7ED3]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='FUNCIONARIO' datatype='table' name='[__tableau_internal_object_id__].[FUNCIONARIO (C##CTFROTA.FUNCIONARIO)_DD3215FA57DA4E08984733A214E6D832]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='MOTORISTA' datatype='table' name='[__tableau_internal_object_id__].[MOTORISTA (C##CTFROTA.MOTORISTA)_31CD5B1799D84DC8BBB9A4317AE6C8AE]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='PESSOA' datatype='table' name='[__tableau_internal_object_id__].[PESSOA (C##CTFROTA.PESSOA)_8A5323DFD5F24BE78029346F7C9BFC19]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='VEICULO' datatype='table' name='[__tableau_internal_object_id__].[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]' role='measure' type='quantitative' />
+      <column-instance column='[DSMODELO]' derivation='None' name='[none:DSMODELO:nk]' pivot='key' type='nominal' />
+      <column-instance column='[TPGASTOS]' derivation='None' name='[none:TPGASTOS:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:DSMODELO:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Actros&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;FH500&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;FH 500&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Volvo FH 400&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;New Item&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Volvo FH 500&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;FH 400&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Mercedes-Benz Actros&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ACTROS&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;R-Series&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:TPGASTOS:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Abastecimento&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Seguro&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Multa&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Manutenção Preventiva&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Documentação veicular&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Manutenção Corretiva&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brasil&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='CTENGATE' id='CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02'>
+            <properties context=''>
+              <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='CTENGATE' table='[C##CTFROTA].[CTENGATE]' type='table' />
+            </properties>
+          </object>
+          <object caption='CTVINCULO' id='CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369'>
+            <properties context=''>
+              <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='CTVINCULO' table='[C##CTFROTA].[CTVINCULO]' type='table' />
+            </properties>
+          </object>
+          <object caption='DESPESAS' id='DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20'>
+            <properties context=''>
+              <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='DESPESAS' table='[C##CTFROTA].[DESPESAS]' type='table' />
+            </properties>
+          </object>
+          <object caption='FORNECEDOR' id='FORNECEDOR (C##CTFROTA.FORNECEDOR)_4A21E9D6CD29491997681C34C2EE7ED3'>
+            <properties context=''>
+              <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='FORNECEDOR' table='[C##CTFROTA].[FORNECEDOR]' type='table' />
+            </properties>
+          </object>
+          <object caption='FUNCIONARIO' id='FUNCIONARIO (C##CTFROTA.FUNCIONARIO)_DD3215FA57DA4E08984733A214E6D832'>
+            <properties context=''>
+              <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='FUNCIONARIO' table='[C##CTFROTA].[FUNCIONARIO]' type='table' />
+            </properties>
+          </object>
+          <object caption='MOTORISTA' id='MOTORISTA (C##CTFROTA.MOTORISTA)_31CD5B1799D84DC8BBB9A4317AE6C8AE'>
+            <properties context=''>
+              <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='MOTORISTA' table='[C##CTFROTA].[MOTORISTA]' type='table' />
+            </properties>
+          </object>
+          <object caption='PESSOA' id='PESSOA (C##CTFROTA.PESSOA)_8A5323DFD5F24BE78029346F7C9BFC19'>
+            <properties context=''>
+              <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='PESSOA' table='[C##CTFROTA].[PESSOA]' type='table' />
+            </properties>
+          </object>
+          <object caption='VEICULO' id='VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD'>
+            <properties context=''>
+              <relation connection='oracle.1v1shl413cm3qm0zzmxi310vey1v' name='VEICULO' table='[C##CTFROTA].[VEICULO]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[VEICULO_IDVEICULO (VEICULO)]' />
+              <expression op='[VEICULO_IDVEICULO (CTVINCULO)]' />
+            </expression>
+            <first-end-point object-id='VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD' />
+            <second-end-point object-id='CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[VEICULO_IDVEICULO (VEICULO)]' />
+              <expression op='[VEICULO_IDVEICULO (DESPESAS)]' />
+            </expression>
+            <first-end-point object-id='VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD' />
+            <second-end-point object-id='DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[COD]' />
+              <expression op='[COD (FORNECEDOR)]' />
+            </expression>
+            <first-end-point object-id='DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='FORNECEDOR (C##CTFROTA.FORNECEDOR)_4A21E9D6CD29491997681C34C2EE7ED3' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[FUNCIONARIO_NRMATRICULA]' />
+              <expression op='[NRMATRICULA]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-guaranteed-value='true' guaranteed-value='true' object-id='MOTORISTA (C##CTFROTA.MOTORISTA)_31CD5B1799D84DC8BBB9A4317AE6C8AE' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='FUNCIONARIO (C##CTFROTA.FUNCIONARIO)_DD3215FA57DA4E08984733A214E6D832' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[MOTORISTA_IDMOTORISTA]' />
+              <expression op='[IDMOTORISTA]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-guaranteed-value='true' guaranteed-value='true' object-id='CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='MOTORISTA (C##CTFROTA.MOTORISTA)_31CD5B1799D84DC8BBB9A4317AE6C8AE' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[PESSOA_IDPESSOA]' />
+              <expression op='[IDPESSOA]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-guaranteed-value='true' guaranteed-value='true' object-id='FUNCIONARIO (C##CTFROTA.FUNCIONARIO)_DD3215FA57DA4E08984733A214E6D832' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='PESSOA (C##CTFROTA.PESSOA)_8A5323DFD5F24BE78029346F7C9BFC19' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[VEICULO_IDVEICULO]' />
+              <expression op='[IDVEICULO]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-guaranteed-value='true' guaranteed-value='true' object-id='CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD' unique-key='true' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Planilha 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='C##CTFROTA' name='federated.0bbfjq710c9ca318kvwas0edn5ks' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bbfjq710c9ca318kvwas0edn5ks'>
+            <_.fcp.ObjectModelTableType.false...column caption='CTENGATE' datatype='integer' name='[__tableau_internal_object_id__].[CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02]' role='measure' type='quantitative' />
+            <column caption='Dsmodelo' datatype='string' name='[DSMODELO]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='CTENGATE' datatype='table' name='[__tableau_internal_object_id__].[CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DSMODELO]' derivation='None' name='[none:DSMODELO:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:DSMODELO:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:DSMODELO:nk]' />
+              <groupfilter function='member' level='[none:DSMODELO:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:DSMODELO:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02:qk]' scope='cols' value='Quantidade de engates' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:DSMODELO:nk]</rows>
+        <cols>[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:CTENGATE (C##CTFROTA.CTENGATE)_03F5BB9E65924E19923AE626CDD23C02:qk]</cols>
+      </table>
+      <simple-id uuid='{59DAF62A-76AF-4DBE-87BA-C705113D4F27}' />
+    </worksheet>
+    <worksheet name='Planilha 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Gastos&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='C##CTFROTA' name='federated.0bbfjq710c9ca318kvwas0edn5ks' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bbfjq710c9ca318kvwas0edn5ks'>
+            <column caption='Tpgastos' datatype='string' name='[TPGASTOS]' role='dimension' type='nominal' />
+            <column caption='Valor' datatype='real' name='[VALOR]' role='measure' type='quantitative' />
+            <column-instance column='[TPGASTOS]' derivation='None' name='[none:TPGASTOS:nk]' pivot='key' type='nominal' />
+            <column-instance column='[VALOR]' derivation='Sum' name='[sum:VALOR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='720' />
+            <format attr='height' value='438' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0bbfjq710c9ca318kvwas0edn5ks].[sum:VALOR:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:TPGASTOS:nk]' />
+              <wedge-size column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[sum:VALOR:qk]' />
+              <size column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[sum:VALOR:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Tipo de Gasto:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:TPGASTOS:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Valor:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0bbfjq710c9ca318kvwas0edn5ks].[sum:VALOR:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9450275897979736' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <percentages enabled='false' mode='row' />
+      </table>
+      <simple-id uuid='{E164437E-93A5-4FA0-8329-DE88150BE6A7}' />
+    </worksheet>
+    <worksheet name='Planilha 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='C##CTFROTA' name='federated.0bbfjq710c9ca318kvwas0edn5ks' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bbfjq710c9ca318kvwas0edn5ks'>
+            <_.fcp.ObjectModelTableType.false...column caption='VEICULO' datatype='integer' name='[__tableau_internal_object_id__].[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]' role='measure' type='quantitative' />
+            <column caption='Tptracao' datatype='string' name='[TPTRACAO]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='VEICULO' datatype='table' name='[__tableau_internal_object_id__].[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TPTRACAO]' derivation='None' name='[none:TPTRACAO:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD:qk]' />
+              <text column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:TPTRACAO:nk]' />
+              <color column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:TPTRACAO:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8CB42956-8666-4FF0-B26F-2912C179FAC1}' />
+    </worksheet>
+    <worksheet name='Planilha 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='C##CTFROTA' name='federated.0bbfjq710c9ca318kvwas0edn5ks' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bbfjq710c9ca318kvwas0edn5ks'>
+            <_.fcp.ObjectModelTableType.false...column caption='CTVINCULO' datatype='integer' name='[__tableau_internal_object_id__].[CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369]' role='measure' type='quantitative' />
+            <column caption='Dsmodelo' datatype='string' name='[DSMODELO]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='CTVINCULO' datatype='table' name='[__tableau_internal_object_id__].[CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DSMODELO]' derivation='None' name='[none:DSMODELO:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:CTVINCULO (C##CTFROTA.CTVINCULO)_15C3B4370C5B4632B240BF9CB2E52369:qk]</rows>
+        <cols>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:DSMODELO:nk]</cols>
+      </table>
+      <simple-id uuid='{615DE8BE-F9FF-4BE5-86BC-D46939C3C4C2}' />
+    </worksheet>
+    <worksheet name='Planilha 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='C##CTFROTA' name='federated.0bbfjq710c9ca318kvwas0edn5ks' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bbfjq710c9ca318kvwas0edn5ks'>
+            <_.fcp.ObjectModelTableType.false...column caption='VEICULO' datatype='integer' name='[__tableau_internal_object_id__].[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]' role='measure' type='quantitative' />
+            <column caption='Dsmodelo' datatype='string' name='[DSMODELO]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='VEICULO' datatype='table' name='[__tableau_internal_object_id__].[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DSMODELO]' derivation='None' name='[none:DSMODELO:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:VEICULO (C##CTFROTA.VEICULO)_517F7A5DDA244D67BDB46DAF286539DD:qk]</rows>
+        <cols>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:DSMODELO:nk]</cols>
+      </table>
+      <simple-id uuid='{202599D5-AA80-41DB-A995-76E740480326}' />
+    </worksheet>
+    <worksheet name='Planilha 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Veiculos com  mais despesas</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='C##CTFROTA' name='federated.0bbfjq710c9ca318kvwas0edn5ks' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bbfjq710c9ca318kvwas0edn5ks'>
+            <column caption='Valor' datatype='real' name='[VALOR]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='DESPESAS' datatype='integer' name='[__tableau_internal_object_id__].[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Veiculo Idveiculo (Despesas)' datatype='real' name='[VEICULO_IDVEICULO (DESPESAS)]' role='dimension' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='DESPESAS' datatype='table' name='[__tableau_internal_object_id__].[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[VEICULO_IDVEICULO (DESPESAS)]' derivation='None' name='[none:VEICULO_IDVEICULO (DESPESAS):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[VALOR]' derivation='Sum' name='[sum:VALOR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:VEICULO_IDVEICULO (DESPESAS):qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:VEICULO_IDVEICULO (DESPESAS):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20:qk]' />
+              <color column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20:qk]' />
+              <text column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:VEICULO_IDVEICULO (DESPESAS):qk]' />
+              <lod column='[federated.0bbfjq710c9ca318kvwas0edn5ks].[sum:VALOR:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8B4DA54F-74AB-4F86-B352-8D815335DA74}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Painel 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='25400' x='800' y='1000'>
+              <zone h='98000' id='3' name='Planilha 2' w='25400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='730' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='73000' x='26200' y='1000'>
+              <zone h='10750' id='8' name='Planilha 2' pane-specification-id='0' param='[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:TPGASTOS:nk]' type-v2='color' w='73000' x='26200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5750' id='9' name='Planilha 2' pane-specification-id='0' param='[federated.0bbfjq710c9ca318kvwas0edn5ks].[sum:VALOR:qk]' type-v2='size' w='73000' x='26200' y='11750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='37000' id='17' name='Planilha 6' w='73000' x='26200' y='17500'>
+                <layout-cache fixed-size-w='396' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='65' h='9125' id='18' is-fixed='true' name='Planilha 6' pane-specification-id='0' param='[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20:qk]' type-v2='color' w='73000' x='26200' y='54500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='19' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Planilha 2' w='25400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10750' id='8' name='Planilha 2' pane-specification-id='0' param='[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:TPGASTOS:nk]' type-v2='color' w='73000' x='26200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5750' id='9' name='Planilha 2' pane-specification-id='0' param='[federated.0bbfjq710c9ca318kvwas0edn5ks].[sum:VALOR:qk]' type-v2='size' w='73000' x='26200' y='11750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37250' id='17' is-fixed='true' name='Planilha 6' w='73000' x='26200' y='17500'>
+                  <layout-cache fixed-size-w='399' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='65' h='9125' id='18' name='Planilha 6' pane-specification-id='0' param='[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20:qk]' type-v2='color' w='73000' x='26200' y='54750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A4E579B9-73C6-42DB-A061-CC20E7B7959B}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Planilha 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='148'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{0767D65C-5FC8-4466-B63B-18653D6A3831}' />
+    </window>
+    <window class='worksheet' name='Planilha 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:TPGASTOS:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0bbfjq710c9ca318kvwas0edn5ks].[sum:VALOR:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9924D485-8286-484C-B95E-3CD4CB976B08}' />
+    </window>
+    <window class='worksheet' name='Planilha 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0bbfjq710c9ca318kvwas0edn5ks].[none:TPTRACAO:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D28C726C-4461-4DB7-9D07-65B170CA8745}' />
+    </window>
+    <window class='worksheet' name='Planilha 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D26A5200-94E3-425E-A608-2EC9AB131A64}' />
+    </window>
+    <window class='worksheet' name='Planilha 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{FDFAAC0C-8CBE-4A80-BFFE-1E7A647086C0}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Painel 1'>
+      <viewpoints>
+        <viewpoint name='Planilha 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Planilha 6' />
+      </viewpoints>
+      <active id='8' />
+      <simple-id uuid='{836B0AD8-9AD2-4E38-BD83-5654F5FDA43D}' />
+    </window>
+    <window class='worksheet' name='Planilha 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0bbfjq710c9ca318kvwas0edn5ks].[__tableau_internal_object_id__].[cnt:DESPESAS (C##CTFROTA.DESPESAS)_BA755DDD745B4AA295CC12D9E520AA20:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C2232AA7-D787-4967-9192-A526750430C8}' />
+    </window>
+  </windows>
+</workbook>
