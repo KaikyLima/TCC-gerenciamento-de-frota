@@ -378,6 +378,35 @@ color: rgb(255, 255, 255);</string>
      <string>CONSULTAR ENGATES</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="botaoTableau">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>370</y>
+      <width>241</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Black</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 7px solid white; 
+    background-color:rgba(0, 0, 0, 0.6);; 
+    border-radius: 10px;
+
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Tableau</string>
+    </property>
+   </widget>
    <zorder>fundo</zorder>
    <zorder>IconUsuario</zorder>
    <zorder>Menuzinho</zorder>
@@ -393,6 +422,7 @@ color: rgb(255, 255, 255);</string>
    <zorder>botaoConsultaVinculos</zorder>
    <zorder>botaoConsultaEngate</zorder>
    <zorder>botaoCadastroFunc</zorder>
+   <zorder>botaoTableau</zorder>
   </widget>
  </widget>
  <resources/>

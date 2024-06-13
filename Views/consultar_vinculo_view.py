@@ -30,13 +30,6 @@ class ConsultarVinculos(QtWidgets.QMainWindow):
         tabela.setRowCount(len(vinculos))
         self.exibirResultados(vinculos)
 
-        '''for i, vinculo in enumerate(vinculos):
-            tabela.setItem(i, 0, QtWidgets.QTableWidgetItem(str(vinculo.DTVINCULO)))
-            tabela.setItem(i, 1, QtWidgets.QTableWidgetItem(str(vinculo.DTDESVINCULO)))
-            frota = session.query(Veiculo).filter_by(IDVEICULO=vinculo.VEICULO_IDVEICULO).first()
-            tabela.setItem(i, 2, QtWidgets.QTableWidgetItem(str(frota.NRFROTA) if frota else ""))
-            motorista = session.query(Motorista).filter_by(IDMOTORISTA=vinculo.MOTORISTA_IDMOTORISTA).first()
-            tabela.setItem(i, 3, QtWidgets.QTableWidgetItem(str(motorista.NMMOTORISTA) if motorista else ""))'''
 
     def buscar_vinculos_ativos(self):
         valor_busca = self.buscaLineEdit.text()
@@ -49,7 +42,6 @@ class ConsultarVinculos(QtWidgets.QMainWindow):
         tabela.setRowCount(len(vinculos))
         self.exibirResultados(vinculos)
 
-    #veiculo = session.query(Veiculo).filter_by(NRFROTA=engate.NRFROTA).first()
     def buscar_vinculos_filtro(self):
         valor_busca = self.buscaLineEdit.text()
         buscaVeiculo = session.query(Veiculo).filter_by(NRFROTA=valor_busca).first()

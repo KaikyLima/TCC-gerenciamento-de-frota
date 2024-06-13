@@ -27,18 +27,6 @@ class ConsultarVeiculo(QtWidgets.QMainWindow):
         tabela   = self.findChild(QtWidgets.QTableWidget, 'tabelaConsulta')
         tabela.setRowCount(len(consulta))
         self.exibirResultados(consulta)
-        '''for i, veiculos in enumerate(consulta):
-            tabela.setItem(i, 0, QtWidgets.QTableWidgetItem(str(veiculos.NRPLACA)))
-            tabela.setItem(i, 3, QtWidgets.QTableWidgetItem(str(veiculos.DSMODELO)))
-            tabela.setItem(i, 4, QtWidgets.QTableWidgetItem(str(veiculos.TPTRACAO)))
-            tabela.setItem(i, 5, QtWidgets.QTableWidgetItem(str(veiculos.NRRENAVAM)))
-            tabela.setItem(i, 6, QtWidgets.QTableWidgetItem(str(veiculos.DTAQUISICAO)))
-            tabela.setItem(i, 1, QtWidgets.QTableWidgetItem(str(veiculos.NRFROTA)))
-            tabela.setItem(i, 2, QtWidgets.QTableWidgetItem(str(veiculos.NRCONJUNTO)))
-            tabela.setItem(i, 7, QtWidgets.QTableWidgetItem(str(veiculos.NRCHASSI)))
-            tabela.setItem(i, 8, QtWidgets.QTableWidgetItem(str(veiculos.QTEIXO)))
-            tabela.setItem(i, 9, QtWidgets.QTableWidgetItem(str(veiculos.TPVEICULO)))'''
-
 
     def buscar(self):
         textoBusca = self.buscaLineEdit.text()

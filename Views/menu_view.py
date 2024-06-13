@@ -5,12 +5,12 @@ from vinculo_motorista_veiculo_view import VincularDesvincularMotorista
 from cadastro_funcionario_view import CadastroFuncionarioView
 from engate_view import EngateDesengateVeiculo
 from despesas_view import DespesasView
-from consultarFornecedor import consultarFornecedor
 from consultar_veiculo_view import ConsultarVeiculo
 from consultar_vinculo_view import ConsultarVinculos
 from consultar_engate_view import ConsultarEngates
 import datetime
 from cadastroFornecedor import cadastroFornecedor
+import subprocess
 
 class MenuInicial(QtWidgets.QMainWindow):
     def __init__(self):
@@ -26,6 +26,7 @@ class MenuInicial(QtWidgets.QMainWindow):
         self.botaoCadastroForne.clicked.connect(self.ChamarTelaCadastroForne)
         self.botaoConsultaVeic.clicked.connect(self.ChamarTelaConsultaVeic)
         self.botaoConsultaEngate.clicked.connect(self.ChamarTelaConsultaEngate)
+        self.botaoTableau.clicked.connect(self.ChamarTableau)
 
         self.cadastro_veiculo_view          = None
         self.vinculo_motorista_veiculo_view = None
@@ -37,6 +38,7 @@ class MenuInicial(QtWidgets.QMainWindow):
         self.consultar_vinculo_view         = None
         self.consultar_engate_view          = None
         self.cadastroFornecedor             = None
+
 
 
         # Obter a data atual
@@ -86,7 +88,9 @@ class MenuInicial(QtWidgets.QMainWindow):
         if not self.engate_desengate_view:
             self.engate_desengate_view = EngateDesengateVeiculo()
         self.engate_desengate_view.show()
-
+    def ChamarTableau(self):
+        caminho_tableau = "C:\\Program Files\\Tableau\\Tableau 2024.1\\bin\\tableau.exe"
+        subprocess.Popen([caminho_tableau])
 
 
 if __name__ == "__main__": #Inicando a tela
