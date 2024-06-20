@@ -13,9 +13,11 @@ class CadastroVeiculoView(QtWidgets.QMainWindow):
         uic.loadUi('telaCadastro.ui', self)
         self.criando_novo_veiculo()
         self.VoltarMenu.clicked.connect(self.ChamarVoltarMenu)
-        self.nrPlaca.textChanged.connect(self.verificar_cadastro_existente)
         self.botaoConsulta.clicked.connect(self.ChamarConsulta)
+        self.botaoPesq.clicked.connect(self.PesquisarVeic)
+        self.botaoLimpar.clicked.connect(self.limpar_campos)
         self.consultar_veiculo_view = None
+        self.veiculo_atual = None
         self.show()
 
         # Obter a data atual
@@ -39,30 +41,40 @@ class CadastroVeiculoView(QtWidgets.QMainWindow):
     def criando_novo_veiculo(self):
         self.botaoCadastrar.clicked.connect(self.registro_veiculo)
 
+    def PesquisarVeic(self):
+        self.veiculo_existente = self.verificar_cadastro_existente()
+        if self.veiculo_existente:
+            QMessageBox.information(self, "Informação", "Veículo encontrado. Modifique os dados se necessário.")
+        return True
+
     def registro_veiculo(self):
-        try: #FAZER OPERAÇÃO ISOLADA? OU DEIXAR? O Q FAZER
-            veiculo = self.verificar_cadastro_existente()
-            if veiculo:
-                self.atualizar_veiculo(veiculo)
-                return
-
-            if not self.validar_campos():
-                return
-
-            novo_veiculo = Veiculo(NRPLACA=self.nrPlaca.text().upper(), DSMODELO=self.dsModelo.currentText(),
-                                   TPTRACAO=self.tpTracao.currentText(), NRRENAVAM=self.nrRenavam.text(),
-                                   DTAQUISICAO=self.dtAquisicao.date().toPyDate(), NRFROTA=self.nrFrota.text(),
-                                   NRCONJUNTO=self.nrConjunto.text(), NRCHASSI=self.nrChassi.text(),
-                                   QTEIXO=int(self.qtdEixo.text()), TPVEICULO=self.tpVeiculo.currentText())
-
-            session.add(novo_veiculo)
-            session.commit()
-
-            QMessageBox.information(self, "Sucesso", "Veículo Cadastrado!")
-            self.limpar_campos()
+        try:
+            if self.veiculo_existente:
+                self.atualizar_veiculo(self.veiculo_existente)
+                QMessageBox.information(self, "Informação", "Veículo encontrado. Modifique os dados se necessário.")
+            else:
+                if not self.validar_campos():
+                    return
+                novo_veiculo = Veiculo(
+                    NRPLACA=self.nrPlaca.text().upper(),
+                    DSMODELO=self.dsModelo.currentText(),
+                    TPTRACAO=self.tpTracao.currentText(),
+                    NRRENAVAM=self.nrRenavam.text(),
+                    DTAQUISICAO=self.dtAquisicao.date().toPyDate(),
+                    NRFROTA=self.nrFrota.text(),
+                    NRCONJUNTO=self.nrConjunto.text(),
+                    NRCHASSI=self.nrChassi.text(),
+                    QTEIXO=int(self.qtdEixo.text()),
+                    TPVEICULO=self.tpVeiculo.currentText()
+                )
+                session.add(novo_veiculo)
+                session.commit()
+                QMessageBox.information(self, "Sucesso", "Veículo Cadastrado!")
+                self.limpar_campos()
         except IntegrityError as e:
             session.rollback()
-            QMessageBox.critical(self, "Erro", "Erro de integridade: pode haver um valor duplicado ou outro problema de restrição.")
+            QMessageBox.critical(self, "Erro",
+                                 "Erro de integridade: pode haver um valor duplicado ou outro problema de restrição.")
         except Exception as e:
             session.rollback()
             QMessageBox.critical(self, "Erro", f"Ocorreu um erro ao realizar o cadastro: {e}")
@@ -138,7 +150,8 @@ class CadastroVeiculoView(QtWidgets.QMainWindow):
                 return veiculo
 
     def carregar_informacoes(self, veiculo):
-
+        self.nrFrota.setText(str(veiculo.NRFROTA))
+        self.nrConjunto.setText(str(veiculo.NRCONJUNTO))
         self.nrRenavam.setText(veiculo.NRRENAVAM)
         self.dsModelo.setCurrentText(veiculo.DSMODELO)
         self.tpVeiculo.setCurrentText(veiculo.TPVEICULO)
@@ -147,31 +160,64 @@ class CadastroVeiculoView(QtWidgets.QMainWindow):
         self.tpTracao.setCurrentText(veiculo.TPTRACAO)
         self.dtAquisicao.setDate(QDate.fromString(veiculo.DTAQUISICAO.strftime('%d-%m-%Y'), 'dd-MM-yyyy'))
 
-        if veiculo.NRFROTA != "":
-            self.nrFrota.setText(veiculo.NRFROTA)
-            self.nrConjunto.clear()  # Limpa o campo de conjunto se a frota estiver definida
-        elif veiculo.NRCONJUNTO != "":
-            self.nrConjunto.setText(veiculo.NRCONJUNTO)
-            self.nrFrota.clear()  # Limpa o campo de frota se o conjunto estiver definido
+        if veiculo.NRFROTA:
+            self.nrConjunto.clear()
+        else:
+            self.nrFrota.clear()
+
+        if self.nrFrota.setText(str(veiculo.NRFROTA)) is None :
+            self.nrConjunto.clear()
+        else:
+            self.nrFrota.clear()
 
     def atualizar_veiculo(self, veiculo):
-        veiculo.NRPLACA     = self.nrPlaca.text().upper()
-        veiculo.NRFROTA     = self.nrFrota.text()
-        veiculo.NRCONJUNTO  = self.nrConjunto.text()
-        veiculo.NRRENAVAM   = self.nrRenavam.text()
-        veiculo.DSMODELO    = self.dsModelo.currentText()
-        veiculo.TPVEICULO   = self.tpVeiculo.currentText()
-        veiculo.QTEIXO      = int(self.qtdEixo.text())
-        veiculo.NRCHASSI    = self.nrChassi.text()
-        veiculo.TPTRACAO    = self.tpTracao.currentText()
-        veiculo.DTAQUISICAO = self.dtAquisicao.date().toPyDate()
+        try:
+            if not self.validar_campos():
+                return
 
-        if not self.validar_campos():
-            return
+            nrPlaca = self.nrPlaca.text().upper()
+            idVeiculo = self.localizar_idVeic(nrPlaca)
+            locVeic = session.query(Veiculo).get(idVeiculo)
 
-        session.commit()
-        QMessageBox.information(self, "Sucesso", "Veículo atualizado com sucesso!")
-        self.limpar_campos()
+            if locVeic is None:
+                QMessageBox.critical(self, "Erro", "Veículo não encontrado!")
+                return
+
+            # Atualizando os campos do veículo
+            locVeic.NRPLACA = nrPlaca
+            locVeic.NRFROTA = self.convert_to_int(self.nrFrota.text())
+            locVeic.NRCONJUNTO = self.convert_to_int(self.nrConjunto.text())
+            locVeic.NRRENAVAM = self.nrRenavam.text()
+            locVeic.DSMODELO = self.dsModelo.currentText()
+            locVeic.TPVEICULO = self.tpVeiculo.currentText()
+            locVeic.QTEIXO = self.convert_to_int(self.qtdEixo.text())
+            locVeic.NRCHASSI = self.nrChassi.text()
+            locVeic.TPTRACAO = self.tpTracao.currentText()
+            locVeic.DTAQUISICAO = self.dtAquisicao.date().toPyDate()
+
+            session.flush()
+            session.commit()
+            QMessageBox.information(self, "Sucesso", "Veículo atualizado com sucesso!")
+            self.limpar_campos()
+
+        except IntegrityError as e:
+            session.rollback()
+            QMessageBox.critical(self, "Erro",
+                                 "Erro de integridade: pode haver um valor duplicado ou outro problema de restrição.")
+        except Exception as e:
+            session.rollback()
+            QMessageBox.critical(self, "Erro", f"Ocorreu um erro ao atualizar o veículo: {e}")
+
+    def localizar_idVeic(self, nrPlaca):
+        return session.query(Veiculo.IDVEICULO).filter(Veiculo.NRPLACA == nrPlaca).scalar()
+
+    def convert_to_int(self, value):
+        try:
+            return int(value) if value else None
+        except ValueError:
+            QMessageBox.critical(self, "Erro", f"Valor inválido para conversão para inteiro: {value}")
+            raise
+
 
     def limpar_campos(self):
         self.nrFrota.clear()
@@ -184,6 +230,7 @@ class CadastroVeiculoView(QtWidgets.QMainWindow):
         self.qtdEixo.clear()
         self.tpTracao.setCurrentIndex(-1)
         self.dtAquisicao.setDate(QDate.currentDate())
+        self.veiculo_atual = None
 
 # Chamada de tela
 if __name__ == "__main__":

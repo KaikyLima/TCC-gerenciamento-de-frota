@@ -803,6 +803,32 @@ background-color: rgb(0, 0, 0);</string>
      <string/>
     </property>
    </widget>
+   <widget class="QPushButton" name="botaoPesq">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>250</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>botaoPesq</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="botaoLimpar">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>30</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Limpar</string>
+    </property>
+   </widget>
    <zorder>label_15</zorder>
    <zorder>nrPlaca</zorder>
    <zorder>dsModelo</zorder>
@@ -831,6 +857,8 @@ background-color: rgb(0, 0, 0);</string>
    <zorder>VoltarMenu</zorder>
    <zorder>label_11</zorder>
    <zorder>botaoConsulta</zorder>
+   <zorder>botaoPesq</zorder>
+   <zorder>botaoLimpar</zorder>
   </widget>
  </widget>
  <resources/>
